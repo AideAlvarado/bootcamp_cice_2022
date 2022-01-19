@@ -11,7 +11,7 @@ import UIKit
 // MARK: - TIPOS BASICOS
 
 var nombre: String = "Pepe" // -> esta es una variable mutable como los de kotlin se copiaron val
-let apellido: String = "Ramirez" // -> esta es una variable inmitable
+let apellido: String = "Ramirez" // -> esta es una variable inmutable. let es una constante
 
 nombre = "Felipe"
 //apellido = "Ocampo"
@@ -44,7 +44,7 @@ numeroD -= 10
 var sino = false
 
 if sino {
-    ("Correcto")
+    debugPrint("Correcto")
 } else {
     debugPrint("Incorrecto")
 }
@@ -60,6 +60,10 @@ if numeroD >= 7 {
 } else {
     print("Incorrecto")
 }
+
+var resultado = numeroD != 0 ? numeroA / Int(numeroB) : 0
+
+print(resultado)
 
 
 // MARK: - CHARACTERS
@@ -166,12 +170,13 @@ func funcionConParametros(mensaje: String){
 funcionConParametros(mensaje: "Hola Andres")
 
 
-func numerosSecuencia( a: Int, b: Int, c: Int) -> Int {
+func numerosSecuencia(_ a: Int, _ b: Int, _ c: Int) -> Int {
     (a*b)+c
 }
 
-let auxDis = numerosSecuencia(a:2,b:3,c:4)
+let auxDis = numerosSecuencia(2, 3, 4)
 print(auxDis)
+
 
 
 
