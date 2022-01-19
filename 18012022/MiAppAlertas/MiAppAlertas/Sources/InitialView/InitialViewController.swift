@@ -45,7 +45,7 @@ class InitialViewController: UIViewController {
                                                   message: "Vamos a seguir probando todo",
                                                   preferredStyle: .actionSheet)
             actionSheetVC.addAction(UIAlertAction(title: "Default", style: .default, handler: { _ in
-                // TODO: - AUI METERMOS OTRO METODO
+                self.choosePhotoLibrary()
             }))
             
             actionSheetVC.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
