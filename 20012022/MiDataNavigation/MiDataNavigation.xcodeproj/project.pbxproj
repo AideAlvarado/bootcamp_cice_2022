@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		4637BFA4279B31C100E652FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637BFA3279B31C100E652FC /* AppDelegate.swift */; };
 		4637BFA6279B31C100E652FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637BFA5279B31C100E652FC /* SceneDelegate.swift */; };
-		4637BFA8279B31C100E652FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637BFA7279B31C100E652FC /* ViewController.swift */; };
 		4637BFAB279B31C100E652FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4637BFA9279B31C100E652FC /* Main.storyboard */; };
 		4637BFAD279B31D000E652FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4637BFAC279B31D000E652FC /* Assets.xcassets */; };
 		4637BFB0279B31D000E652FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4637BFAE279B31D000E652FC /* LaunchScreen.storyboard */; };
+		4637BFBA279B334700E652FC /* PrimeraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637BFB9279B334700E652FC /* PrimeraViewController.swift */; };
+		4637BFBC279B3EBF00E652FC /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637BFBB279B3EBF00E652FC /* SegundaViewController.swift */; };
+		4637BFBE279B3ECF00E652FC /* TerceraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637BFBD279B3ECF00E652FC /* TerceraViewController.swift */; };
+		4637BFC0279B3EDC00E652FC /* CuartaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637BFBF279B3EDC00E652FC /* CuartaViewController.swift */; };
+		4637BFC4279B44E300E652FC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637BFC3279B44E300E652FC /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4637BFA0279B31C100E652FC /* MiDataNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiDataNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4637BFA3279B31C100E652FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4637BFA5279B31C100E652FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4637BFA7279B31C100E652FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4637BFAA279B31C100E652FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4637BFAC279B31D000E652FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4637BFAF279B31D000E652FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4637BFB1279B31D000E652FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4637BFB9279B334700E652FC /* PrimeraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeraViewController.swift; sourceTree = "<group>"; };
+		4637BFBB279B3EBF00E652FC /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
+		4637BFBD279B3ECF00E652FC /* TerceraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceraViewController.swift; sourceTree = "<group>"; };
+		4637BFBF279B3EDC00E652FC /* CuartaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuartaViewController.swift; sourceTree = "<group>"; };
+		4637BFC3279B44E300E652FC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		4637BFA2279B31C100E652FC /* MiDataNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				4637BFA3279B31C100E652FC /* AppDelegate.swift */,
-				4637BFA5279B31C100E652FC /* SceneDelegate.swift */,
-				4637BFA7279B31C100E652FC /* ViewController.swift */,
+				4637BFC1279B442C00E652FC /* Utils+Helpers */,
+				4637BFB8279B32D600E652FC /* Source */,
+				4637BFB7279B32BE00E652FC /* CoreApp */,
 				4637BFA9279B31C100E652FC /* Main.storyboard */,
 				4637BFAC279B31D000E652FC /* Assets.xcassets */,
 				4637BFAE279B31D000E652FC /* LaunchScreen.storyboard */,
 				4637BFB1279B31D000E652FC /* Info.plist */,
 			);
 			path = MiDataNavigation;
+			sourceTree = "<group>";
+		};
+		4637BFB7279B32BE00E652FC /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				4637BFA3279B31C100E652FC /* AppDelegate.swift */,
+				4637BFA5279B31C100E652FC /* SceneDelegate.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		4637BFB8279B32D600E652FC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4637BFB9279B334700E652FC /* PrimeraViewController.swift */,
+				4637BFBB279B3EBF00E652FC /* SegundaViewController.swift */,
+				4637BFBD279B3ECF00E652FC /* TerceraViewController.swift */,
+				4637BFBF279B3EDC00E652FC /* CuartaViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4637BFC1279B442C00E652FC /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4637BFC3279B44E300E652FC /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4637BFA8279B31C100E652FC /* ViewController.swift in Sources */,
+				4637BFBE279B3ECF00E652FC /* TerceraViewController.swift in Sources */,
+				4637BFBC279B3EBF00E652FC /* SegundaViewController.swift in Sources */,
+				4637BFC0279B3EDC00E652FC /* CuartaViewController.swift in Sources */,
+				4637BFC4279B44E300E652FC /* Utils.swift in Sources */,
+				4637BFBA279B334700E652FC /* PrimeraViewController.swift in Sources */,
 				4637BFA4279B31C100E652FC /* AppDelegate.swift in Sources */,
 				4637BFA6279B31C100E652FC /* SceneDelegate.swift in Sources */,
 			);
@@ -305,7 +345,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
