@@ -83,19 +83,13 @@
                                 <rect key="frame" x="24" y="278" width="357" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dirección" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3By-Bc-9T1">
-                                <rect key="frame" x="18" y="339" width="363" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Calcula la edad de tu perro" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="djp-18-Gms">
-                                <rect key="frame" x="20" y="405" width="363" height="34"/>
+                                <rect key="frame" x="19" y="405" width="363" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0J-l7-Ak1">
                                 <rect key="frame" x="18" y="482" width="357" height="40"/>
@@ -111,6 +105,12 @@
                                     <action selector="calculoEdadPerroACTION:" destination="d3T-IE-y24" eventType="touchUpInside" id="6sy-p0-VEx"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dirección" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3By-Bc-9T1">
+                                <rect key="frame" x="21" y="336" width="363" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Uvf-Iu-ppc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -217,7 +217,8 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Yu0-0E-1ac" kind="show" id="Dui-ir-3Zg"/>
+                                    <action selector="irVentana4ACTION:" destination="B3r-LK-aoS" eventType="touchUpInside" id="rQv-4u-A7Y"/>
+                                    <segue destination="Yu0-0E-1ac" kind="show" identifier="segueV4" id="Dui-ir-3Zg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_la Edad de mi perro es:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxv-fj-oOy">
@@ -232,6 +233,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ventana 3" id="Fsa-uM-7Ep"/>
+                    <connections>
+                        <outlet property="edadPerroTF" destination="Nxv-fj-oOy" id="wSK-I3-ngA"/>
+                        <outlet property="miApellidoTF" destination="5Sf-io-gfT" id="mTC-Rf-Kwj"/>
+                        <outlet property="miCiudadTF" destination="nFL-Y2-8tU" id="0yJ-e9-iMf"/>
+                        <outlet property="miCodigoPostalTF" destination="imn-ZW-OBz" id="53G-QR-bjY"/>
+                        <outlet property="miDireccionTF" destination="LB5-fS-IO7" id="pM2-jd-K7w"/>
+                        <outlet property="miNombreTF" destination="0rV-6v-7E8" id="APb-M4-zLI"/>
+                        <outlet property="miPosicionGeoTF" destination="6gA-GG-JlN" id="r32-ud-uMJ"/>
+                        <outlet property="miTelefonoTF" destination="lQf-eP-92H" id="4T5-bP-Uuc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gop-5n-ToB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -283,6 +294,9 @@
                                         <color key="backgroundColor" red="0.40109241008758545" green="0.91652458906173706" blue="0.90689343214035034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="enviarRodaLaInformaionMailACTION:" destination="Yu0-0E-1ac" eventType="touchUpInside" id="mng-wV-Z6v"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_la Edad de mi perro es:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ng6-qM-sfc">
                                 <rect key="frame" x="24" y="376" width="367" height="70"/>
@@ -319,6 +333,16 @@
                     <navigationItem key="navigationItem" title="Ventana 4" id="8rf-mo-pqN">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="Peg-eW-NpO"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="edadPerroTF" destination="ng6-qM-sfc" id="EVj-Aw-4RD"/>
+                        <outlet property="miApellidoTF" destination="PYC-zi-paP" id="y7u-6K-jSo"/>
+                        <outlet property="miCiudadLBL" destination="hKG-1E-D6n" id="3UW-7a-kOp"/>
+                        <outlet property="miCodigoPostalLBL" destination="beY-5U-DQK" id="UEz-0l-ZzQ"/>
+                        <outlet property="miDireccionTF" destination="PRi-fY-3nT" id="Roy-hP-1kk"/>
+                        <outlet property="miNombreTF" destination="Ojb-uF-RUS" id="UA8-gq-E8K"/>
+                        <outlet property="miPosicionGeoLBL" destination="CSa-Uw-Opv" id="MNK-oM-Yex"/>
+                        <outlet property="miTelefonoTF" destination="EjX-kJ-6AY" id="1zx-ht-FSp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x21-nZ-orc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

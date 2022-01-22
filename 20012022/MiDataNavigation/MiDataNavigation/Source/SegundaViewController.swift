@@ -16,20 +16,19 @@ class SegundaViewController: UIViewController {
     var nuevaEdadPerro: Int?
     
     
-   // MARK: - IBOutlets
+    // MARK: - IBOutlets
     
     @IBOutlet weak var miNombreLBL: UILabel!
     @IBOutlet weak var miApellidoLBL: UILabel!
-    
-    
+     
     @IBOutlet weak var miTelefonoTF: UITextField!
     @IBOutlet weak var miDireccionTF: UITextField!
     @IBOutlet weak var edadPerroTF: UITextField!
     
     
     // MARK: - IBACTION
-        
-  
+    
+    
     @IBAction func calculoEdadPerroACTION(_ sender: UIButton) {
         self.edadPerro = Int(self.edadPerroTF.text ?? "0")
         
@@ -43,7 +42,7 @@ class SegundaViewController: UIViewController {
         } else{
             self.present(Utils.shared.showAlertVC(title: "Estimado usuario", message: "Por favor introduce la edad de tu perro para calcular"),
                          animated: true,
-            completion: nil)
+                         completion: nil)
         }
     }
     
@@ -53,7 +52,7 @@ class SegundaViewController: UIViewController {
         
         debugPrint(self.datosUsuario.nombreData ?? "")
         debugPrint(self.datosUsuario.apellidoData ?? "")
-                        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.
     }
     
     private func configuracionUI() {
@@ -61,29 +60,53 @@ class SegundaViewController: UIViewController {
         self.miNombreLBL.text = "Mi Nombre es: \(self.datosUsuario.nombreData ?? "")"
         self.miApellidoLBL.text = " Mi apellido es: \(self.datosUsuario.apellidoData ?? "")"
     }
-
+    
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       
+        
         if segue.identifier == "segueV3"{
-            if  !(self.miTelefonoTF.text?.isEmpty ?? false) &&
-                !(self.miDireccionTF.text?.isEmpty ?? false) &&
-                    "\(self.nuevaEdadPerro ?? 0)".isEmpty {
-               
-               _ = segue.destination as? TerceraViewController
+            
+            if let edadPerro = self.nuevaEdadPerro {
                 
-            } else {
+                navigacionVentana3(edadPerro, segue)
+            }  else {
                 self.present(Utils.shared.showAlertVC(title: "Heyeee",
-                                                      message: "Por favor introduce datos en todos los ampos de texto"),
+                                                      message: "Por favor introduce datos en todos los campos de texto"),
                              animated: true,
                              completion: nil)
             }
         }
-        
     }
-   
-
+    
+    private func navigacionVentana3(_ edadPerro: Int, _ segue: UIStoryboardSegue) {
+        if  !(self.miTelefonoTF.text?.isEmpty ?? false) &&
+                !(self.miDireccionTF.text?.isEmpty ?? false) &&
+                !("\(edadPerro)".isEmpty) {
+            
+           let ventana3VC = segue.destination as? TerceraViewController
+            ventana3VC?.datosUsuario.nombreData = datosUsuario.nombreData
+            ventana3VC?.datosUsuario.apellidoData = datosUsuario.apellidoData
+            ventana3VC?.datosUsuario.telefonoData = self.miTelefonoTF.text
+            ventana3VC?.datosUsuario.direccionData = self.miDireccionTF.text
+            ventana3VC?.datosUsuario.edadPerroData = "\(self.nuevaEdadPerro ?? 0)"
+            
+            
+            
+        } else {
+            self.present(Utils.shared.showAlertVC(title: "Heyeee",
+                                                  message: "Por favor introduce datos en todos los campos de texto"),
+                         animated: true,
+                         completion: nil)
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
 }

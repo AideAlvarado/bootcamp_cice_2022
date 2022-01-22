@@ -10,8 +10,34 @@ import UIKit
 
 class Utils {
     
+    
+    // patron Singleton
     static let shared = Utils()
     
+    func configuracionPickerView(tag: Int,
+                                 delegate: UIPickerViewDelegate,
+                                 dataSource: UIPickerViewDataSource,
+                                 textField: UITextField,
+                                 dataArray: [String]){
+        
+        let pickerView = UIPickerView()
+        pickerView.delegate = delegate
+        pickerView.dataSource = dataSource
+        pickerView.tag = tag
+        textField.inputView = pickerView
+        textField.text = dataArray[0]
+        
+        
+    }
+    
+     func dataIntexFieldIsEmpty(primerParametro: [String]) -> Bool {
+        for item in primerParametro{
+            if (item.isEmpty){
+                return false
+            }
+        }
+        return true
+    }
     
     /// method showAlertVC return a alert generic component
     /// - Parameters:
