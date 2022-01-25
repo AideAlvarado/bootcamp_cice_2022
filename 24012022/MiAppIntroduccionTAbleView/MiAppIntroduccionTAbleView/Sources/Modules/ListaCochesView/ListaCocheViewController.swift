@@ -18,6 +18,7 @@ class ListaCocheViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = Utils.Constants().tituloListaMeses
         self.configuracionTableView()
 
         // Do any additional setup after loading the view.
