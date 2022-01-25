@@ -8,22 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		46B0643E27A0628900723736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0643D27A0628800723736 /* AppDelegate.swift */; };
-		46B0644027A0628900723736 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0643F27A0628900723736 /* SceneDelegate.swift */; };
-		46B0644227A0628900723736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0644127A0628900723736 /* ViewController.swift */; };
-		46B0644527A0628900723736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B0644327A0628900723736 /* Main.storyboard */; };
 		46B0644727A0629700723736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B0644627A0629700723736 /* Assets.xcassets */; };
 		46B0644A27A0629700723736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B0644827A0629700723736 /* LaunchScreen.storyboard */; };
+		46B0645327A0665600723736 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0645227A0665600723736 /* AppCoordinator.swift */; };
+		46B0645927A06AB700723736 /* ListaCocheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0645727A06AB700723736 /* ListaCocheViewController.swift */; };
+		46B0645A27A06AB700723736 /* ListaCocheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0645827A06AB700723736 /* ListaCocheViewController.xib */; };
+		46B0645C27A06B2C00723736 /* ListaCochesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0645B27A06B2C00723736 /* ListaCochesCoordinator.swift */; };
+		46B0646027A06F5300723736 /* MesesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0645E27A06F5300723736 /* MesesCell.swift */; };
+		46B0646127A06F5300723736 /* MesesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0645F27A06F5300723736 /* MesesCell.xib */; };
+		46B0646427A0793700723736 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0646327A0793700723736 /* Utils.swift */; };
+		46B0646827A07DCB00723736 /* ListaSuperCochesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0646627A07DCB00723736 /* ListaSuperCochesViewController.swift */; };
+		46B0646927A07DCB00723736 /* ListaSuperCochesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0646727A07DCB00723736 /* ListaSuperCochesViewController.xib */; };
+		46B0646B27A07E1400723736 /* ListaSuperCochesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0646A27A07E1400723736 /* ListaSuperCochesCoordinator.swift */; };
+		46B0646F27A07FC800723736 /* HometabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0646D27A07FC800723736 /* HometabBarViewController.swift */; };
+		46B0647027A07FC800723736 /* HometabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0646E27A07FC800723736 /* HometabBarViewController.xib */; };
+		46B0647227A0802100723736 /* HometabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0647127A0802100723736 /* HometabBarCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46B0643A27A0628800723736 /* MiAppIntroduccionTAbleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiAppIntroduccionTAbleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B0643D27A0628800723736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46B0643F27A0628900723736 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		46B0644127A0628900723736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46B0644427A0628900723736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46B0644627A0629700723736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46B0644927A0629700723736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46B0644B27A0629700723736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B0645227A0665600723736 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		46B0645727A06AB700723736 /* ListaCocheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCocheViewController.swift; sourceTree = "<group>"; };
+		46B0645827A06AB700723736 /* ListaCocheViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaCocheViewController.xib; sourceTree = "<group>"; };
+		46B0645B27A06B2C00723736 /* ListaCochesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesCoordinator.swift; sourceTree = "<group>"; };
+		46B0645E27A06F5300723736 /* MesesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesesCell.swift; sourceTree = "<group>"; };
+		46B0645F27A06F5300723736 /* MesesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MesesCell.xib; sourceTree = "<group>"; };
+		46B0646327A0793700723736 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		46B0646627A07DCB00723736 /* ListaSuperCochesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaSuperCochesViewController.swift; sourceTree = "<group>"; };
+		46B0646727A07DCB00723736 /* ListaSuperCochesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaSuperCochesViewController.xib; sourceTree = "<group>"; };
+		46B0646A27A07E1400723736 /* ListaSuperCochesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaSuperCochesCoordinator.swift; sourceTree = "<group>"; };
+		46B0646D27A07FC800723736 /* HometabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HometabBarViewController.swift; sourceTree = "<group>"; };
+		46B0646E27A07FC800723736 /* HometabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HometabBarViewController.xib; sourceTree = "<group>"; };
+		46B0647127A0802100723736 /* HometabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HometabBarCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,89 @@
 		46B0643C27A0628800723736 /* MiAppIntroduccionTAbleView */ = {
 			isa = PBXGroup;
 			children = (
-				46B0643D27A0628800723736 /* AppDelegate.swift */,
-				46B0643F27A0628900723736 /* SceneDelegate.swift */,
-				46B0644127A0628900723736 /* ViewController.swift */,
-				46B0644327A0628900723736 /* Main.storyboard */,
+				46B0646227A0791D00723736 /* Utils+Helpers */,
+				46B0645427A069E000723736 /* Sources */,
+				46B0645127A0663400723736 /* CoreApp */,
 				46B0644627A0629700723736 /* Assets.xcassets */,
 				46B0644827A0629700723736 /* LaunchScreen.storyboard */,
 				46B0644B27A0629700723736 /* Info.plist */,
 			);
 			path = MiAppIntroduccionTAbleView;
+			sourceTree = "<group>";
+		};
+		46B0645127A0663400723736 /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				46B0643D27A0628800723736 /* AppDelegate.swift */,
+				46B0645227A0665600723736 /* AppCoordinator.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		46B0645427A069E000723736 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				46B0645527A069EE00723736 /* Modules */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		46B0645527A069EE00723736 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				46B0646C27A07F7B00723736 /* HomeTabBarView */,
+				46B0646527A07D7500723736 /* ListaSuperCochesView */,
+				46B0645627A069F700723736 /* ListaCochesView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		46B0645627A069F700723736 /* ListaCochesView */ = {
+			isa = PBXGroup;
+			children = (
+				46B0645D27A06F0800723736 /* Cell */,
+				46B0645727A06AB700723736 /* ListaCocheViewController.swift */,
+				46B0645827A06AB700723736 /* ListaCocheViewController.xib */,
+				46B0645B27A06B2C00723736 /* ListaCochesCoordinator.swift */,
+			);
+			path = ListaCochesView;
+			sourceTree = "<group>";
+		};
+		46B0645D27A06F0800723736 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				46B0645E27A06F5300723736 /* MesesCell.swift */,
+				46B0645F27A06F5300723736 /* MesesCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		46B0646227A0791D00723736 /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				46B0646327A0793700723736 /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		46B0646527A07D7500723736 /* ListaSuperCochesView */ = {
+			isa = PBXGroup;
+			children = (
+				46B0646627A07DCB00723736 /* ListaSuperCochesViewController.swift */,
+				46B0646727A07DCB00723736 /* ListaSuperCochesViewController.xib */,
+				46B0646A27A07E1400723736 /* ListaSuperCochesCoordinator.swift */,
+			);
+			path = ListaSuperCochesView;
+			sourceTree = "<group>";
+		};
+		46B0646C27A07F7B00723736 /* HomeTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				46B0646D27A07FC800723736 /* HometabBarViewController.swift */,
+				46B0646E27A07FC800723736 /* HometabBarViewController.xib */,
+				46B0647127A0802100723736 /* HometabBarCoordinator.swift */,
+			);
+			path = HomeTabBarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B0644A27A0629700723736 /* LaunchScreen.storyboard in Resources */,
+				46B0647027A07FC800723736 /* HometabBarViewController.xib in Resources */,
 				46B0644727A0629700723736 /* Assets.xcassets in Resources */,
-				46B0644527A0628900723736 /* Main.storyboard in Resources */,
+				46B0646927A07DCB00723736 /* ListaSuperCochesViewController.xib in Resources */,
+				46B0645A27A06AB700723736 /* ListaCocheViewController.xib in Resources */,
+				46B0646127A06F5300723736 /* MesesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +235,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46B0644227A0628900723736 /* ViewController.swift in Sources */,
+				46B0646027A06F5300723736 /* MesesCell.swift in Sources */,
+				46B0645327A0665600723736 /* AppCoordinator.swift in Sources */,
+				46B0645C27A06B2C00723736 /* ListaCochesCoordinator.swift in Sources */,
+				46B0646B27A07E1400723736 /* ListaSuperCochesCoordinator.swift in Sources */,
 				46B0643E27A0628900723736 /* AppDelegate.swift in Sources */,
-				46B0644027A0628900723736 /* SceneDelegate.swift in Sources */,
+				46B0646F27A07FC800723736 /* HometabBarViewController.swift in Sources */,
+				46B0645927A06AB700723736 /* ListaCocheViewController.swift in Sources */,
+				46B0647227A0802100723736 /* HometabBarCoordinator.swift in Sources */,
+				46B0646827A07DCB00723736 /* ListaSuperCochesViewController.swift in Sources */,
+				46B0646427A0793700723736 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46B0644327A0628900723736 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46B0644427A0628900723736 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46B0644827A0629700723736 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,7 +389,7 @@
 				INFOPLIST_FILE = MiAppIntroduccionTAbleView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,7 +401,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +416,7 @@
 				INFOPLIST_FILE = MiAppIntroduccionTAbleView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +428,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
