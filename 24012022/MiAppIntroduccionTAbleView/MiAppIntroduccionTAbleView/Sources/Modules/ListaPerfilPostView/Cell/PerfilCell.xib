@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="302" id="KGk-i7-Jjw" customClass="PerfilCell" customModule="MiAppIntroduccionTAbleView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="302"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="302"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mkt" translatesAutoresizingMaskIntoConstraints="NO" id="kzU-H1-DU1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="129" id="NUa-Ek-C5m"/>
+                            <constraint firstAttribute="height" constant="103" id="ojt-EZ-FY7"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jungkook" translatesAutoresizingMaskIntoConstraints="NO" id="Oel-jf-oTB">
+                        <rect key="frame" x="22" y="39" width="81" height="81"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="81" id="3T1-JS-HaS"/>
+                            <constraint firstAttribute="height" constant="81" id="e1D-pY-mH5"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFf-SF-0NX">
+                        <rect key="frame" x="256" y="71" width="44" height="44"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="P1f-Tz-AQB"/>
+                            <constraint firstAttribute="height" constant="44" id="SLH-Lw-Sl1"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="B1"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndo-AU-zEG">
+                        <rect key="frame" x="86" y="89" width="40" height="31"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="iXI-CU-lbS"/>
+                            <constraint firstAttribute="width" constant="30" id="wwl-se-zD4"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="B1"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="_Nombre perfilLBL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEh-QU-LyT">
+                        <rect key="frame" x="16" y="144" width="288" height="39"/>
+                        <color key="backgroundColor" red="1" green="0.68774830840000001" blue="0.94049447080000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="_Puesto actual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-1s-tzK">
+                        <rect key="frame" x="16" y="244" width="166" height="35"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="_@linkedin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kei-Dv-hSN">
+                        <rect key="frame" x="128" y="111" width="124" height="25"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAJ-bR-da5">
+                        <rect key="frame" x="16" y="187" width="288" height="49"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <mutableString key="text">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</mutableString>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc2-2f-ccz">
+                        <rect key="frame" x="194" y="244" width="110" height="50"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="ohC-YX-EuB"/>
+                            <constraint firstAttribute="height" constant="50" id="wD2-7Z-hRE"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="B3"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Oel-jf-oTB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="06Z-Fp-KxF"/>
+                    <constraint firstItem="kzU-H1-DU1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3dH-Wl-G8p"/>
+                    <constraint firstAttribute="trailing" secondItem="CAJ-bR-da5" secondAttribute="trailing" constant="16" id="6qo-vQ-QUt"/>
+                    <constraint firstItem="CAJ-bR-da5" firstAttribute="top" secondItem="iEh-QU-LyT" secondAttribute="bottom" constant="5" id="7kx-jR-U04"/>
+                    <constraint firstItem="hc2-2f-ccz" firstAttribute="leading" secondItem="8nn-1s-tzK" secondAttribute="trailing" constant="10" id="7w8-Co-Gzs"/>
+                    <constraint firstItem="kzU-H1-DU1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BOe-AC-RNp"/>
+                    <constraint firstItem="kzU-H1-DU1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EOw-nn-hpx"/>
+                    <constraint firstAttribute="trailing" secondItem="kzU-H1-DU1" secondAttribute="trailing" id="IWW-I9-m6F"/>
+                    <constraint firstItem="Kei-Dv-hSN" firstAttribute="top" secondItem="wFf-SF-0NX" secondAttribute="bottom" constant="20" id="LHt-HC-K5Z"/>
+                    <constraint firstItem="Oel-jf-oTB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="PLY-PU-DXW"/>
+                    <constraint firstAttribute="trailing" secondItem="wFf-SF-0NX" secondAttribute="trailing" constant="20" id="Sxt-JQ-gO0"/>
+                    <constraint firstItem="iEh-QU-LyT" firstAttribute="top" secondItem="Kei-Dv-hSN" secondAttribute="bottom" constant="8" id="aOK-1K-fLr"/>
+                    <constraint firstItem="8nn-1s-tzK" firstAttribute="top" secondItem="hc2-2f-ccz" secondAttribute="top" id="el7-PD-hlw"/>
+                    <constraint firstItem="8nn-1s-tzK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="fG2-UF-6ql"/>
+                    <constraint firstAttribute="bottom" secondItem="hc2-2f-ccz" secondAttribute="bottom" constant="8" id="iBT-Rx-GGU"/>
+                    <constraint firstItem="kzU-H1-DU1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lfD-gV-kFB"/>
+                    <constraint firstAttribute="trailing" secondItem="iEh-QU-LyT" secondAttribute="trailing" constant="16" id="r2T-eC-0ge"/>
+                    <constraint firstItem="CAJ-bR-da5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ub6-8l-IpM"/>
+                    <constraint firstItem="iEh-QU-LyT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xOw-Ui-lmh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="miDescripcionCVLBL" destination="CAJ-bR-da5" id="LeU-wY-lwc"/>
+                <outlet property="miImagenPerfil" destination="Oel-jf-oTB" id="9hS-Vm-aWp"/>
+                <outlet property="miNombrePerfilLBL" destination="iEh-QU-LyT" id="b4g-Ai-94r"/>
+                <outlet property="miPuestoActualLBL" destination="8nn-1s-tzK" id="RNT-g2-6P9"/>
+                <outlet property="miUsuarioLinkedInLBL" destination="Kei-Dv-hSN" id="lyE-bi-wbF"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="168.75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jungkook" width="275" height="185"/>
+        <image name="mkt" width="322" height="185"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
