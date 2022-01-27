@@ -27,6 +27,7 @@ class ListaPerfilPostViewController: UIViewController {
         self.miPerfilposttableView.delegate = self
         self.miPerfilposttableView.dataSource = self
         self.miPerfilposttableView.register(UINib(nibName: PerfilCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: PerfilCell.defaultReuseIdentifier)
+        self.miPerfilposttableView.register(UINib(nibName: PostCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: PostCell.defaultReuseIdentifier)
     }
 
 }
@@ -50,6 +51,7 @@ extension ListaPerfilPostViewController: UITableViewDataSource {
         switch indexPath.section {
         case 0:
             let cellPerfil = self.miPerfilposttableView.dequeueReusableCell(withIdentifier: PerfilCell.defaultReuseIdentifier, for: indexPath) as! PerfilCell
+            cellPerfil.delegate = self
             cellPerfil.setupCellPerfil(data: UserDataModel(nombrePerfil: "Jungkook",
                                                            descripcionPerfil: "Kpop singer",
                                                            puestoActualperfil: "BTS member",
@@ -57,7 +59,14 @@ extension ListaPerfilPostViewController: UITableViewDataSource {
                                                            imagePerfil: "jungkook"))
             return cellPerfil
         default:
-            return UITableViewCell()
+            let cellPost = self.miPerfilposttableView.dequeueReusableCell(withIdentifier: PostCell.defaultReuseIdentifier, for: indexPath) as! PostCell
+                  cellPost.setupPostCell(data: UserDataModel(nombrePerfil: "Jimin",
+                                                       descripcionPerfil: "Kpop Singer",
+                                                       puestoActualperfil: "BTS member",
+                                                       usuarioLinkedInPerfil: "@jimin_BTS",
+                                                       imagePerfil: "jimin"))
+            
+            return cellPost
             
         }
     }
@@ -73,7 +82,29 @@ extension ListaPerfilPostViewController: UITableViewDelegate {
         case 0:
             return 265
         default:
-            return 44
+            return UITableView.automaticDimension
         }
     }
+}
+
+extension ListaPerfilPostViewController: PerfilCellDelegate {
+       
+    func showAlertB1() {
+    let alertVC = UIAlertController(title: "Explota la cabeza", message: "a por ellos", preferredStyle: .alert)
+    alertVC.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+    self.present(alertVC, animated: true, completion: nil)
+}
+    
+    func showAlertB2() {
+        let alertVC = UIAlertController(title: "Explota la cabeza dos veces", message: "a por ellos", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+        self.present(alertVC, animated: true, completion: nil)
+    }
+    
+    func navigationToDetailView(withData: UserDataModel?) {
+        let alertVC = UIAlertController(title: "Explota la cabeza dos veces", message: "a por ellos", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+        self.present(alertVC, animated: true, completion: nil)
+    }
+    
 }

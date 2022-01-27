@@ -34,6 +34,9 @@
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="B1"/>
+                        <connections>
+                            <action selector="senderEventAlertB1ACTION:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Kj8-hr-lvx"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc2-2f-ccz">
                         <rect key="frame" x="194" y="244" width="110" height="50"/>
@@ -42,6 +45,9 @@
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="B3"/>
+                        <connections>
+                            <action selector="senderEventButton3ACTION:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DOE-dl-64b"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndo-AU-zEG">
                         <rect key="frame" x="55" y="64" width="40" height="31"/>
@@ -52,7 +58,10 @@
                         </constraints>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="B1"/>
+                        <buttonConfiguration key="configuration" style="plain" title="B2"/>
+                        <connections>
+                            <action selector="senderEventACTIONB2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MDm-Ik-zez"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_Nombre perfilLBL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEh-QU-LyT">
                         <rect key="frame" x="16" y="144" width="288" height="39"/>
