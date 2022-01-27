@@ -10,6 +10,10 @@
 		46B0649F27A3361D00723736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0649E27A3361D00723736 /* AppDelegate.swift */; };
 		46B064A827A3362F00723736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B064A727A3362F00723736 /* Assets.xcassets */; };
 		46B064AB27A3362F00723736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B064A927A3362F00723736 /* LaunchScreen.storyboard */; };
+		46B064B427A3377100723736 /* AppCoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064B327A3377100723736 /* AppCoreCoordinator.swift */; };
+		46B064B927A33A2500723736 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064B727A33A2500723736 /* RegistroViewController.swift */; };
+		46B064BA27A33A2500723736 /* RegistroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B064B827A33A2500723736 /* RegistroViewController.xib */; };
+		46B064BC27A33A4300723736 /* RegistroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064BB27A33A4300723736 /* RegistroCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +22,10 @@
 		46B064A727A3362F00723736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46B064AA27A3362F00723736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46B064AC27A3363000723736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B064B327A3377100723736 /* AppCoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreCoordinator.swift; sourceTree = "<group>"; };
+		46B064B727A33A2500723736 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		46B064B827A33A2500723736 /* RegistroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistroViewController.xib; sourceTree = "<group>"; };
+		46B064BB27A33A4300723736 /* RegistroCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +58,40 @@
 		46B0649D27A3361D00723736 /* MiUserDefault */ = {
 			isa = PBXGroup;
 			children = (
-				46B0649E27A3361D00723736 /* AppDelegate.swift */,
+				46B064B527A339E800723736 /* Sources */,
+				46B064B227A3374700723736 /* CoreApp */,
 				46B064A727A3362F00723736 /* Assets.xcassets */,
 				46B064A927A3362F00723736 /* LaunchScreen.storyboard */,
 				46B064AC27A3363000723736 /* Info.plist */,
 			);
 			path = MiUserDefault;
+			sourceTree = "<group>";
+		};
+		46B064B227A3374700723736 /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				46B0649E27A3361D00723736 /* AppDelegate.swift */,
+				46B064B327A3377100723736 /* AppCoreCoordinator.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		46B064B527A339E800723736 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				46B064B627A339F500723736 /* RegistroView */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		46B064B627A339F500723736 /* RegistroView */ = {
+			isa = PBXGroup;
+			children = (
+				46B064B727A33A2500723736 /* RegistroViewController.swift */,
+				46B064B827A33A2500723736 /* RegistroViewController.xib */,
+				46B064BB27A33A4300723736 /* RegistroCoordinator.swift */,
+			);
+			path = RegistroView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B064BA27A33A2500723736 /* RegistroViewController.xib in Resources */,
 				46B064AB27A3362F00723736 /* LaunchScreen.storyboard in Resources */,
 				46B064A827A3362F00723736 /* Assets.xcassets in Resources */,
 			);
@@ -129,6 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B0649F27A3361D00723736 /* AppDelegate.swift in Sources */,
+				46B064B927A33A2500723736 /* RegistroViewController.swift in Sources */,
+				46B064B427A3377100723736 /* AppCoreCoordinator.swift in Sources */,
+				46B064BC27A33A4300723736 /* RegistroCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
