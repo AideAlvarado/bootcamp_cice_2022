@@ -15,6 +15,15 @@
 		46B064BA27A33A2500723736 /* RegistroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B064B827A33A2500723736 /* RegistroViewController.xib */; };
 		46B064BC27A33A4300723736 /* RegistroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064BB27A33A4300723736 /* RegistroCoordinator.swift */; };
 		46B064BF27A4601200723736 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064BE27A4601200723736 /* Utils.swift */; };
+		46B064C327A4773400723736 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064C127A4773400723736 /* HomeViewController.swift */; };
+		46B064C427A4773500723736 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B064C227A4773400723736 /* HomeViewController.xib */; };
+		46B064C827A4778400723736 /* ListaPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064C627A4778400723736 /* ListaPostsViewController.swift */; };
+		46B064C927A4778400723736 /* ListaPostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B064C727A4778400723736 /* ListaPostsViewController.xib */; };
+		46B064CC27A477C000723736 /* ListaCochesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064CB27A477C000723736 /* ListaCochesViewController.swift */; };
+		46B064CE27A4780600723736 /* ListaCochesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B064CD27A4780600723736 /* ListaCochesViewController.xib */; };
+		46B064D027A4788700723736 /* ListaCochesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064CF27A4788700723736 /* ListaCochesCoordinator.swift */; };
+		46B064D227A4794500723736 /* ListaPostsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064D127A4794500723736 /* ListaPostsCoordinator.swift */; };
+		46B064D427A479EE00723736 /* HomeViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064D327A479EE00723736 /* HomeViewCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +37,15 @@
 		46B064B827A33A2500723736 /* RegistroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistroViewController.xib; sourceTree = "<group>"; };
 		46B064BB27A33A4300723736 /* RegistroCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroCoordinator.swift; sourceTree = "<group>"; };
 		46B064BE27A4601200723736 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		46B064C127A4773400723736 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		46B064C227A4773400723736 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		46B064C627A4778400723736 /* ListaPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPostsViewController.swift; sourceTree = "<group>"; };
+		46B064C727A4778400723736 /* ListaPostsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaPostsViewController.xib; sourceTree = "<group>"; };
+		46B064CB27A477C000723736 /* ListaCochesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesViewController.swift; sourceTree = "<group>"; };
+		46B064CD27A4780600723736 /* ListaCochesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaCochesViewController.xib; sourceTree = "<group>"; };
+		46B064CF27A4788700723736 /* ListaCochesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesCoordinator.swift; sourceTree = "<group>"; };
+		46B064D127A4794500723736 /* ListaPostsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPostsCoordinator.swift; sourceTree = "<group>"; };
+		46B064D327A479EE00723736 /* HomeViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +100,9 @@
 		46B064B527A339E800723736 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				46B064CA27A4778A00723736 /* ListaCocheView */,
+				46B064C527A4773E00723736 /* ListaPostView */,
+				46B064C027A476DA00723736 /* HomeView */,
 				46B064B627A339F500723736 /* RegistroView */,
 			);
 			path = Sources;
@@ -103,6 +124,36 @@
 				46B064BE27A4601200723736 /* Utils.swift */,
 			);
 			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		46B064C027A476DA00723736 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				46B064C127A4773400723736 /* HomeViewController.swift */,
+				46B064C227A4773400723736 /* HomeViewController.xib */,
+				46B064D327A479EE00723736 /* HomeViewCoordinator.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		46B064C527A4773E00723736 /* ListaPostView */ = {
+			isa = PBXGroup;
+			children = (
+				46B064C627A4778400723736 /* ListaPostsViewController.swift */,
+				46B064C727A4778400723736 /* ListaPostsViewController.xib */,
+				46B064D127A4794500723736 /* ListaPostsCoordinator.swift */,
+			);
+			path = ListaPostView;
+			sourceTree = "<group>";
+		};
+		46B064CA27A4778A00723736 /* ListaCocheView */ = {
+			isa = PBXGroup;
+			children = (
+				46B064CB27A477C000723736 /* ListaCochesViewController.swift */,
+				46B064CD27A4780600723736 /* ListaCochesViewController.xib */,
+				46B064CF27A4788700723736 /* ListaCochesCoordinator.swift */,
+			);
+			path = ListaCocheView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +214,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B064C927A4778400723736 /* ListaPostsViewController.xib in Resources */,
+				46B064CE27A4780600723736 /* ListaCochesViewController.xib in Resources */,
 				46B064BA27A33A2500723736 /* RegistroViewController.xib in Resources */,
 				46B064AB27A3362F00723736 /* LaunchScreen.storyboard in Resources */,
 				46B064A827A3362F00723736 /* Assets.xcassets in Resources */,
+				46B064C427A4773500723736 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +232,15 @@
 			files = (
 				46B064BF27A4601200723736 /* Utils.swift in Sources */,
 				46B0649F27A3361D00723736 /* AppDelegate.swift in Sources */,
+				46B064D027A4788700723736 /* ListaCochesCoordinator.swift in Sources */,
 				46B064B927A33A2500723736 /* RegistroViewController.swift in Sources */,
+				46B064D227A4794500723736 /* ListaPostsCoordinator.swift in Sources */,
+				46B064D427A479EE00723736 /* HomeViewCoordinator.swift in Sources */,
+				46B064CC27A477C000723736 /* ListaCochesViewController.swift in Sources */,
 				46B064B427A3377100723736 /* AppCoreCoordinator.swift in Sources */,
 				46B064BC27A33A4300723736 /* RegistroCoordinator.swift in Sources */,
+				46B064C327A4773400723736 /* HomeViewController.swift in Sources */,
+				46B064C827A4778400723736 /* ListaPostsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

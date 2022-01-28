@@ -46,15 +46,25 @@ class RegistroViewController: UIViewController {
                                                     completionHandler: {_ in self.usuarioLogado = true
                 Utils.Constants().kPrefs.setValue(self.usuarioLogado, forKey: Utils.Constants().kUserLogado)
                 
+                let vc = HomeViewCoordinator.homeView()
+                vc.modalTransitionStyle = .coverVertical
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true, completion: nil)
                                                         }),
                                                         animated: true,
                                                         completion: nil)
             
+        } else {
+            self.present(Utils.shared.muestraAlerta(titulo: "Debes cumplimentar el formulario",
+                                                    mensaje: "Adelante selecciona una foto y te registrarás con éxito",
+                                                    completionHandler: nil),
+                         animated: true,
+                         completion: nil)
         }
     }
     
     @IBAction func recuperarDatosACTION(_ sender: Any) {
-        self.mostrarDatosActualizados() 
+        self.mostrarDatosActualizados()
     }
     
     override func viewDidLoad() {
@@ -116,6 +126,15 @@ class RegistroViewController: UIViewController {
     
     private func mostrarDatosActualizados() {
         self.nombreTF.text = Utils.Constants().kPrefs.string(forKey: Utils.Constants().kNombre)
+        self.apellidoTF.text = Utils.Constants().kPrefs.string(forKey: Utils.Constants().kApellido)
+        self.direccionTF.text = Utils.Constants().kPrefs.string(forKey: Utils.Constants().kDireccion)
+        self.telefonoTF.text = Utils.Constants().kPrefs.string(forKey: Utils.Constants().kTelefono)
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        self.fechaActualizacionLBL.text = "Ultima actualizacion: \(dateFormatter.string(from: Utils.Constants().kPrefs.object(forKey: Utils.Constants().kFechaActualizacion) as! Date))"
+        
+        self.imagenPerfil.image = UIImage(data: Utils.Constants().kPrefs.object(forKey: Utils.Constants().kImage) as! Data)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
