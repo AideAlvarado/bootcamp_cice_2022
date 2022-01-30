@@ -34,6 +34,7 @@
 		46B0652B27A6F47900723736 /* ListaTareasViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0652A27A6F47900723736 /* ListaTareasViewCoordinator.swift */; };
 		46B0652D27A6F4AC00723736 /* DetalleTareaViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0652C27A6F4AC00723736 /* DetalleTareaViewCoordinator.swift */; };
 		46B0652F27A6F54F00723736 /* HomeTabBarViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0652E27A6F54F00723736 /* HomeTabBarViewCoordinator.swift */; };
+		46B0653227A7094100723736 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0653127A7094100723736 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		46B0652A27A6F47900723736 /* ListaTareasViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareasViewCoordinator.swift; sourceTree = "<group>"; };
 		46B0652C27A6F4AC00723736 /* DetalleTareaViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTareaViewCoordinator.swift; sourceTree = "<group>"; };
 		46B0652E27A6F54F00723736 /* HomeTabBarViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewCoordinator.swift; sourceTree = "<group>"; };
+		46B0653127A7094100723736 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		46B064E027A48D7F00723736 /* MiTaskVersion3.0 */ = {
 			isa = PBXGroup;
 			children = (
+				46B0653027A7091700723736 /* Utils+Helpers */,
 				46B064FE27A6F04800723736 /* Sources */,
 				46B064F927A6E91A00723736 /* Resources */,
 				46B064F827A6E91200723736 /* Models */,
@@ -218,6 +221,14 @@
 			path = ContactosView;
 			sourceTree = "<group>";
 		};
+		46B0653027A7091700723736 /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				46B0653127A7094100723736 /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +318,7 @@
 				46B064E227A48D7F00723736 /* AppDelegate.swift in Sources */,
 				46B0651427A6F1FA00723736 /* NuevaTareaViewController.swift in Sources */,
 				46B0652D27A6F4AC00723736 /* DetalleTareaViewCoordinator.swift in Sources */,
+				46B0653227A7094100723736 /* Utils.swift in Sources */,
 				46B064F727A6E61700723736 /* AppCoreCoordinator.swift in Sources */,
 				46B0651827A6F20F00723736 /* CategoriaViewController.swift in Sources */,
 				46B0651C27A6F22400723736 /* ListaTareasViewController.swift in Sources */,
