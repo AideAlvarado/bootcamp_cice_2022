@@ -33,6 +33,7 @@
 		46B0652927A6F42F00723736 /* CategoriaViewCoordintator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0652827A6F42F00723736 /* CategoriaViewCoordintator.swift */; };
 		46B0652B27A6F47900723736 /* ListaTareasViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0652A27A6F47900723736 /* ListaTareasViewCoordinator.swift */; };
 		46B0652D27A6F4AC00723736 /* DetalleTareaViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0652C27A6F4AC00723736 /* DetalleTareaViewCoordinator.swift */; };
+		46B0652F27A6F54F00723736 /* HomeTabBarViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0652E27A6F54F00723736 /* HomeTabBarViewCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		46B0652827A6F42F00723736 /* CategoriaViewCoordintator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaViewCoordintator.swift; sourceTree = "<group>"; };
 		46B0652A27A6F47900723736 /* ListaTareasViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareasViewCoordinator.swift; sourceTree = "<group>"; };
 		46B0652C27A6F4AC00723736 /* DetalleTareaViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTareaViewCoordinator.swift; sourceTree = "<group>"; };
+		46B0652E27A6F54F00723736 /* HomeTabBarViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				46B0650A27A6F19C00723736 /* HomeTabBarViewController.swift */,
 				46B0650B27A6F19C00723736 /* HomeTabBarViewController.xib */,
+				46B0652E27A6F54F00723736 /* HomeTabBarViewCoordinator.swift */,
 			);
 			path = HomeTabBarView;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B0652F27A6F54F00723736 /* HomeTabBarViewCoordinator.swift in Sources */,
 				46B0650827A6F14A00723736 /* LoginViewController.swift in Sources */,
 				46B0651027A6F1C100723736 /* ContactosViewController.swift in Sources */,
 				46B0652927A6F42F00723736 /* CategoriaViewCoordintator.swift in Sources */,
