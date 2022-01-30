@@ -13,6 +13,20 @@
 		46B064F727A6E61700723736 /* AppCoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064F627A6E61700723736 /* AppCoreCoordinator.swift */; };
 		46B064FB27A6E95E00723736 /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 46B064FA27A6E95D00723736 /* contacts.json */; };
 		46B064FD27A6E99700723736 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064FC27A6E99700723736 /* TaskModel.swift */; };
+		46B0650827A6F14A00723736 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0650627A6F14A00723736 /* LoginViewController.swift */; };
+		46B0650927A6F14A00723736 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0650727A6F14A00723736 /* LoginViewController.xib */; };
+		46B0650C27A6F19C00723736 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0650A27A6F19C00723736 /* HomeTabBarViewController.swift */; };
+		46B0650D27A6F19C00723736 /* HomeTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0650B27A6F19C00723736 /* HomeTabBarViewController.xib */; };
+		46B0651027A6F1C100723736 /* ContactosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0650E27A6F1C100723736 /* ContactosViewController.swift */; };
+		46B0651127A6F1C100723736 /* ContactosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0650F27A6F1C100723736 /* ContactosViewController.xib */; };
+		46B0651427A6F1FA00723736 /* NuevaTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0651227A6F1FA00723736 /* NuevaTareaViewController.swift */; };
+		46B0651527A6F1FA00723736 /* NuevaTareaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0651327A6F1FA00723736 /* NuevaTareaViewController.xib */; };
+		46B0651827A6F20F00723736 /* CategoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0651627A6F20F00723736 /* CategoriaViewController.swift */; };
+		46B0651927A6F20F00723736 /* CategoriaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0651727A6F20F00723736 /* CategoriaViewController.xib */; };
+		46B0651C27A6F22400723736 /* ListaTareasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0651A27A6F22400723736 /* ListaTareasViewController.swift */; };
+		46B0651D27A6F22400723736 /* ListaTareasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0651B27A6F22400723736 /* ListaTareasViewController.xib */; };
+		46B0652027A6F23800723736 /* DetalleTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0651E27A6F23800723736 /* DetalleTareaViewController.swift */; };
+		46B0652127A6F23800723736 /* DetalleTareaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0651F27A6F23800723736 /* DetalleTareaViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +38,20 @@
 		46B064F627A6E61700723736 /* AppCoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreCoordinator.swift; sourceTree = "<group>"; };
 		46B064FA27A6E95D00723736 /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
 		46B064FC27A6E99700723736 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		46B0650627A6F14A00723736 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		46B0650727A6F14A00723736 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		46B0650A27A6F19C00723736 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		46B0650B27A6F19C00723736 /* HomeTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarViewController.xib; sourceTree = "<group>"; };
+		46B0650E27A6F1C100723736 /* ContactosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosViewController.swift; sourceTree = "<group>"; };
+		46B0650F27A6F1C100723736 /* ContactosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactosViewController.xib; sourceTree = "<group>"; };
+		46B0651227A6F1FA00723736 /* NuevaTareaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaTareaViewController.swift; sourceTree = "<group>"; };
+		46B0651327A6F1FA00723736 /* NuevaTareaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NuevaTareaViewController.xib; sourceTree = "<group>"; };
+		46B0651627A6F20F00723736 /* CategoriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaViewController.swift; sourceTree = "<group>"; };
+		46B0651727A6F20F00723736 /* CategoriaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaViewController.xib; sourceTree = "<group>"; };
+		46B0651A27A6F22400723736 /* ListaTareasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareasViewController.swift; sourceTree = "<group>"; };
+		46B0651B27A6F22400723736 /* ListaTareasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTareasViewController.xib; sourceTree = "<group>"; };
+		46B0651E27A6F23800723736 /* DetalleTareaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTareaViewController.swift; sourceTree = "<group>"; };
+		46B0651F27A6F23800723736 /* DetalleTareaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleTareaViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 		46B064E027A48D7F00723736 /* MiTaskVersion3.0 */ = {
 			isa = PBXGroup;
 			children = (
+				46B064FE27A6F04800723736 /* Sources */,
 				46B064F927A6E91A00723736 /* Resources */,
 				46B064F827A6E91200723736 /* Models */,
 				46B064F527A6E5E600723736 /* CoreApp */,
@@ -89,6 +118,83 @@
 				46B064FA27A6E95D00723736 /* contacts.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		46B064FE27A6F04800723736 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				46B0650327A6F08700723736 /* ListaTareasView */,
+				46B0650127A6F06C00723736 /* NuevaTareaView */,
+				46B0650527A6F0BE00723736 /* ContactosView */,
+				46B0650027A6F05C00723736 /* HomeTabBarView */,
+				46B064FF27A6F05200723736 /* LoginView */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		46B064FF27A6F05200723736 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				46B0650627A6F14A00723736 /* LoginViewController.swift */,
+				46B0650727A6F14A00723736 /* LoginViewController.xib */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		46B0650027A6F05C00723736 /* HomeTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				46B0650A27A6F19C00723736 /* HomeTabBarViewController.swift */,
+				46B0650B27A6F19C00723736 /* HomeTabBarViewController.xib */,
+			);
+			path = HomeTabBarView;
+			sourceTree = "<group>";
+		};
+		46B0650127A6F06C00723736 /* NuevaTareaView */ = {
+			isa = PBXGroup;
+			children = (
+				46B0650227A6F07A00723736 /* CategoriasView */,
+				46B0651227A6F1FA00723736 /* NuevaTareaViewController.swift */,
+				46B0651327A6F1FA00723736 /* NuevaTareaViewController.xib */,
+			);
+			path = NuevaTareaView;
+			sourceTree = "<group>";
+		};
+		46B0650227A6F07A00723736 /* CategoriasView */ = {
+			isa = PBXGroup;
+			children = (
+				46B0651627A6F20F00723736 /* CategoriaViewController.swift */,
+				46B0651727A6F20F00723736 /* CategoriaViewController.xib */,
+			);
+			path = CategoriasView;
+			sourceTree = "<group>";
+		};
+		46B0650327A6F08700723736 /* ListaTareasView */ = {
+			isa = PBXGroup;
+			children = (
+				46B0650427A6F09800723736 /* DetalleTareaView */,
+				46B0651A27A6F22400723736 /* ListaTareasViewController.swift */,
+				46B0651B27A6F22400723736 /* ListaTareasViewController.xib */,
+			);
+			path = ListaTareasView;
+			sourceTree = "<group>";
+		};
+		46B0650427A6F09800723736 /* DetalleTareaView */ = {
+			isa = PBXGroup;
+			children = (
+				46B0651E27A6F23800723736 /* DetalleTareaViewController.swift */,
+				46B0651F27A6F23800723736 /* DetalleTareaViewController.xib */,
+			);
+			path = DetalleTareaView;
+			sourceTree = "<group>";
+		};
+		46B0650527A6F0BE00723736 /* ContactosView */ = {
+			isa = PBXGroup;
+			children = (
+				46B0650E27A6F1C100723736 /* ContactosViewController.swift */,
+				46B0650F27A6F1C100723736 /* ContactosViewController.xib */,
+			);
+			path = ContactosView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +255,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B0650927A6F14A00723736 /* LoginViewController.xib in Resources */,
+				46B0651527A6F1FA00723736 /* NuevaTareaViewController.xib in Resources */,
+				46B0652127A6F23800723736 /* DetalleTareaViewController.xib in Resources */,
+				46B0651927A6F20F00723736 /* CategoriaViewController.xib in Resources */,
+				46B0651127A6F1C100723736 /* ContactosViewController.xib in Resources */,
+				46B0651D27A6F22400723736 /* ListaTareasViewController.xib in Resources */,
 				46B064EE27A48D9300723736 /* LaunchScreen.storyboard in Resources */,
 				46B064FB27A6E95E00723736 /* contacts.json in Resources */,
 				46B064EB27A48D9300723736 /* Assets.xcassets in Resources */,
+				46B0650D27A6F19C00723736 /* HomeTabBarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,9 +275,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B0650827A6F14A00723736 /* LoginViewController.swift in Sources */,
+				46B0651027A6F1C100723736 /* ContactosViewController.swift in Sources */,
 				46B064FD27A6E99700723736 /* TaskModel.swift in Sources */,
 				46B064E227A48D7F00723736 /* AppDelegate.swift in Sources */,
+				46B0651427A6F1FA00723736 /* NuevaTareaViewController.swift in Sources */,
 				46B064F727A6E61700723736 /* AppCoreCoordinator.swift in Sources */,
+				46B0651827A6F20F00723736 /* CategoriaViewController.swift in Sources */,
+				46B0651C27A6F22400723736 /* ListaTareasViewController.swift in Sources */,
+				46B0652027A6F23800723736 /* DetalleTareaViewController.swift in Sources */,
+				46B0650C27A6F19C00723736 /* HomeTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
