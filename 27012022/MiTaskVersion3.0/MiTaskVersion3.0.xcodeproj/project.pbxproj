@@ -38,6 +38,11 @@
 		46B0653427A99AD200723736 /* ContactosServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0653327A99AD100723736 /* ContactosServerModel.swift */; };
 		46B0653D27A9A48300723736 /* ContactosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0653B27A9A48300723736 /* ContactosCell.swift */; };
 		46B0653E27A9A48300723736 /* ContactosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0653C27A9A48300723736 /* ContactosCell.xib */; };
+		46B0654327A9BB4900723736 /* DetalleContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0654127A9BB4900723736 /* DetalleContactoViewController.swift */; };
+		46B0654427A9BB4900723736 /* DetalleContactoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0654227A9BB4900723736 /* DetalleContactoViewController.xib */; };
+		46B0654627A9BB6600723736 /* DetalleContactoViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0654527A9BB6600723736 /* DetalleContactoViewCoordinator.swift */; };
+		46B0654A27A9C0D800723736 /* PerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0654827A9C0D800723736 /* PerfilCell.swift */; };
+		46B0654B27A9C0D800723736 /* PerfilCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B0654927A9C0D800723736 /* PerfilCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +79,11 @@
 		46B0653327A99AD100723736 /* ContactosServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosServerModel.swift; sourceTree = "<group>"; };
 		46B0653B27A9A48300723736 /* ContactosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosCell.swift; sourceTree = "<group>"; };
 		46B0653C27A9A48300723736 /* ContactosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactosCell.xib; sourceTree = "<group>"; };
+		46B0654127A9BB4900723736 /* DetalleContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoViewController.swift; sourceTree = "<group>"; };
+		46B0654227A9BB4900723736 /* DetalleContactoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleContactoViewController.xib; sourceTree = "<group>"; };
+		46B0654527A9BB6600723736 /* DetalleContactoViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoViewCoordinator.swift; sourceTree = "<group>"; };
+		46B0654827A9C0D800723736 /* PerfilCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilCell.swift; sourceTree = "<group>"; };
+		46B0654927A9C0D800723736 /* PerfilCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +231,7 @@
 		46B0650527A6F0BE00723736 /* ContactosView */ = {
 			isa = PBXGroup;
 			children = (
+				46B0654027A9BB1900723736 /* DetalleContactoView */,
 				46B0653527A9A3E700723736 /* Cell */,
 				46B0650E27A6F1C100723736 /* ContactosViewController.swift */,
 				46B0650F27A6F1C100723736 /* ContactosViewController.xib */,
@@ -242,6 +253,26 @@
 			children = (
 				46B0653B27A9A48300723736 /* ContactosCell.swift */,
 				46B0653C27A9A48300723736 /* ContactosCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		46B0654027A9BB1900723736 /* DetalleContactoView */ = {
+			isa = PBXGroup;
+			children = (
+				46B0654727A9C0AD00723736 /* Cell */,
+				46B0654127A9BB4900723736 /* DetalleContactoViewController.swift */,
+				46B0654227A9BB4900723736 /* DetalleContactoViewController.xib */,
+				46B0654527A9BB6600723736 /* DetalleContactoViewCoordinator.swift */,
+			);
+			path = DetalleContactoView;
+			sourceTree = "<group>";
+		};
+		46B0654727A9C0AD00723736 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				46B0654827A9C0D800723736 /* PerfilCell.swift */,
+				46B0654927A9C0D800723736 /* PerfilCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -310,9 +341,11 @@
 				46B0651927A6F20F00723736 /* CategoriaViewController.xib in Resources */,
 				46B0653E27A9A48300723736 /* ContactosCell.xib in Resources */,
 				46B0651127A6F1C100723736 /* ContactosViewController.xib in Resources */,
+				46B0654B27A9C0D800723736 /* PerfilCell.xib in Resources */,
 				46B0651D27A6F22400723736 /* ListaTareasViewController.xib in Resources */,
 				46B064EE27A48D9300723736 /* LaunchScreen.storyboard in Resources */,
 				46B064FB27A6E95E00723736 /* contacts.json in Resources */,
+				46B0654427A9BB4900723736 /* DetalleContactoViewController.xib in Resources */,
 				46B064EB27A48D9300723736 /* Assets.xcassets in Resources */,
 				46B0650D27A6F19C00723736 /* HomeTabBarViewController.xib in Resources */,
 			);
@@ -327,6 +360,7 @@
 			files = (
 				46B0652F27A6F54F00723736 /* HomeTabBarViewCoordinator.swift in Sources */,
 				46B0650827A6F14A00723736 /* LoginViewController.swift in Sources */,
+				46B0654627A9BB6600723736 /* DetalleContactoViewCoordinator.swift in Sources */,
 				46B0651027A6F1C100723736 /* ContactosViewController.swift in Sources */,
 				46B0653427A99AD200723736 /* ContactosServerModel.swift in Sources */,
 				46B0653D27A9A48300723736 /* ContactosCell.swift in Sources */,
@@ -339,12 +373,14 @@
 				46B0651427A6F1FA00723736 /* NuevaTareaViewController.swift in Sources */,
 				46B0652D27A6F4AC00723736 /* DetalleTareaViewCoordinator.swift in Sources */,
 				46B0653227A7094100723736 /* Utils.swift in Sources */,
+				46B0654327A9BB4900723736 /* DetalleContactoViewController.swift in Sources */,
 				46B064F727A6E61700723736 /* AppCoreCoordinator.swift in Sources */,
 				46B0651827A6F20F00723736 /* CategoriaViewController.swift in Sources */,
 				46B0651C27A6F22400723736 /* ListaTareasViewController.swift in Sources */,
 				46B0652027A6F23800723736 /* DetalleTareaViewController.swift in Sources */,
 				46B0652527A6F3B500723736 /* ContactosViewCoordinator.swift in Sources */,
 				46B0650C27A6F19C00723736 /* HomeTabBarViewController.swift in Sources */,
+				46B0654A27A9C0D800723736 /* PerfilCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
