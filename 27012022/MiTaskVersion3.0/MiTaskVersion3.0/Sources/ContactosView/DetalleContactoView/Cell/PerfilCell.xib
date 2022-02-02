@@ -35,13 +35,6 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondodegradado" translatesAutoresizingMaskIntoConstraints="NO" id="wcT-vs-hzw">
                         <rect key="frame" x="120" y="80" width="80" height="80"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_usuario de twitter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tt-yw-6mI">
-                        <rect key="frame" x="16" y="162" width="298" height="18"/>
-                        <color key="backgroundColor" red="0.91652458910000001" green="0.78406180979999995" blue="0.87594144309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvT-ze-UpG">
                         <rect key="frame" x="16" y="203.5" width="298" height="20.5"/>
                         <color key="backgroundColor" red="0.91652458910000001" green="0.78406180979999995" blue="0.87594144309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,6 +53,13 @@
                         <rect key="frame" x="16" y="264.5" width="298" height="20.5"/>
                         <color key="backgroundColor" red="0.91652458910000001" green="0.78406180979999995" blue="0.87594144309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="_usuario de twitter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tt-yw-6mI">
+                        <rect key="frame" x="16" y="161" width="298" height="18"/>
+                        <color key="backgroundColor" red="0.91652458910000001" green="0.78406180979999995" blue="0.87594144309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
