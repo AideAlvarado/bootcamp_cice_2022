@@ -1,5 +1,5 @@
 //
-//  CategoriaCell.swift
+//  TareaCell.swift
 //  MiTaskVersion3.0
 //
 //  Created by Aide Alvarado on 5/2/22.
@@ -7,12 +7,20 @@
 
 import UIKit
 
-class CategoriaCell: UITableViewCell, ReuseIdentifierProtocol {
+class TareasCell: UITableViewCell, ReuseIdentifierProtocol {
     
-    // MARK: - IBOutlet
-    @IBOutlet weak var nombreCategoriaLBL: UILabel!
     
-
+    // MARK - IBOutlets
+    
+    
+    @IBOutlet weak var nombreTarea: UILabel!
+    @IBOutlet weak var prioridadTarea: UILabel!
+    @IBOutlet weak var imageVI: UIImageView!
+    
+    
+    
+       
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

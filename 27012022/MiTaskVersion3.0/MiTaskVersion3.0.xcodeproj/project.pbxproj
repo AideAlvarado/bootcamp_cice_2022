@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4613840C27AEDC8800837EBC /* CategoriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613840A27AEDC8800837EBC /* CategoriaCell.swift */; };
+		4613840C27AEDC8800837EBC /* TareaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613840A27AEDC8800837EBC /* TareaCell.swift */; };
 		4613840D27AEDC8900837EBC /* CategoriaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4613840B27AEDC8800837EBC /* CategoriaCell.xib */; };
+		4613841127AEF83800837EBC /* TareasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613840F27AEF83800837EBC /* TareasCell.swift */; };
+		4613841227AEF83800837EBC /* TareaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4613841027AEF83800837EBC /* TareaCell.xib */; };
 		46B064E227A48D7F00723736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B064E127A48D7F00723736 /* AppDelegate.swift */; };
 		46B064EB27A48D9300723736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B064EA27A48D9300723736 /* Assets.xcassets */; };
 		46B064EE27A48D9300723736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B064EC27A48D9300723736 /* LaunchScreen.storyboard */; };
@@ -48,8 +50,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4613840A27AEDC8800837EBC /* CategoriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCell.swift; sourceTree = "<group>"; };
+		4613840A27AEDC8800837EBC /* TareaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareaCell.swift; sourceTree = "<group>"; };
 		4613840B27AEDC8800837EBC /* CategoriaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaCell.xib; sourceTree = "<group>"; };
+		4613840F27AEF83800837EBC /* TareasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasCell.swift; sourceTree = "<group>"; };
+		4613841027AEF83800837EBC /* TareaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TareaCell.xib; sourceTree = "<group>"; };
 		46B064DE27A48D7F00723736 /* MiTaskVersion3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiTaskVersion3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B064E127A48D7F00723736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46B064EA27A48D9300723736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,8 +108,17 @@
 		4613840927AEDC4C00837EBC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				4613840A27AEDC8800837EBC /* CategoriaCell.swift */,
+				4613840A27AEDC8800837EBC /* TareaCell.swift */,
 				4613840B27AEDC8800837EBC /* CategoriaCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4613840E27AEF81500837EBC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4613840F27AEF83800837EBC /* TareasCell.swift */,
+				4613841027AEF83800837EBC /* TareaCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -224,6 +237,7 @@
 		46B0650327A6F08700723736 /* ListaTareasView */ = {
 			isa = PBXGroup;
 			children = (
+				4613840E27AEF81500837EBC /* Cell */,
 				46B0650427A6F09800723736 /* DetalleTareaView */,
 				46B0651A27A6F22400723736 /* ListaTareasViewController.swift */,
 				46B0651B27A6F22400723736 /* ListaTareasViewController.xib */,
@@ -357,6 +371,7 @@
 				46B0651127A6F1C100723736 /* ContactosViewController.xib in Resources */,
 				46B0654B27A9C0D800723736 /* PerfilCell.xib in Resources */,
 				46B0651D27A6F22400723736 /* ListaTareasViewController.xib in Resources */,
+				4613841227AEF83800837EBC /* TareaCell.xib in Resources */,
 				46B064EE27A48D9300723736 /* LaunchScreen.storyboard in Resources */,
 				46B064FB27A6E95E00723736 /* contacts.json in Resources */,
 				46B0654427A9BB4900723736 /* DetalleContactoViewController.xib in Resources */,
@@ -378,6 +393,7 @@
 				46B0654627A9BB6600723736 /* DetalleContactoViewCoordinator.swift in Sources */,
 				46B0651027A6F1C100723736 /* ContactosViewController.swift in Sources */,
 				46B0653427A99AD200723736 /* ContactosServerModel.swift in Sources */,
+				4613841127AEF83800837EBC /* TareasCell.swift in Sources */,
 				46B0653D27A9A48300723736 /* ContactosCell.swift in Sources */,
 				46B0652927A6F42F00723736 /* CategoriaViewCoordintator.swift in Sources */,
 				46B064FD27A6E99700723736 /* TaskModel.swift in Sources */,
@@ -394,7 +410,7 @@
 				46B0651C27A6F22400723736 /* ListaTareasViewController.swift in Sources */,
 				46B0652027A6F23800723736 /* DetalleTareaViewController.swift in Sources */,
 				46B0652527A6F3B500723736 /* ContactosViewCoordinator.swift in Sources */,
-				4613840C27AEDC8800837EBC /* CategoriaCell.swift in Sources */,
+				4613840C27AEDC8800837EBC /* TareaCell.swift in Sources */,
 				46B0650C27A6F19C00723736 /* HomeTabBarViewController.swift in Sources */,
 				46B0654A27A9C0D800723736 /* PerfilCell.swift in Sources */,
 			);
