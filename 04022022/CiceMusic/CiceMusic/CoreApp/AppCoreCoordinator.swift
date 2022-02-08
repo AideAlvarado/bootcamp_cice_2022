@@ -22,3 +22,4 @@ extension AppCoreCoordinator: AppCoreCoordinatorProtocol {
         window.makeKeyAndVisible()
     }
 }
+
