@@ -23,6 +23,37 @@
 		4613845227B04CD700837EBC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613845127B04CD700837EBC /* Utils.swift */; };
 		4613845427B05E2400837EBC /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613845327B05E2400837EBC /* SplashProvider.swift */; };
 		4613845727B2D77900837EBC /* MusicServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613845627B2D77900837EBC /* MusicServerModel.swift */; };
+		4613848F27B4244900837EBC /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4613848827B4244900837EBC /* TestViewController.xib */; };
+		4613849027B4244900837EBC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613848927B4244900837EBC /* TestViewController.swift */; };
+		4613849127B4244900837EBC /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613848A27B4244900837EBC /* TestRouter.swift */; };
+		4613849227B4244900837EBC /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613848B27B4244900837EBC /* TestProvider.swift */; };
+		4613849327B4244900837EBC /* TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613848C27B4244900837EBC /* TestCoordinator.swift */; };
+		4613849427B4244900837EBC /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613848D27B4244900837EBC /* TestPresenter.swift */; };
+		4613849527B4244900837EBC /* TestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613848E27B4244900837EBC /* TestInteractor.swift */; };
+		461384A227B4255B00837EBC /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4613849B27B4255B00837EBC /* MusicViewController.xib */; };
+		461384A327B4255B00837EBC /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613849C27B4255B00837EBC /* MusicViewController.swift */; };
+		461384A427B4255B00837EBC /* MusicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613849D27B4255B00837EBC /* MusicRouter.swift */; };
+		461384A527B4255B00837EBC /* MusicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613849E27B4255B00837EBC /* MusicProvider.swift */; };
+		461384A627B4255B00837EBC /* MusicCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613849F27B4255B00837EBC /* MusicCoordinator.swift */; };
+		461384A727B4255B00837EBC /* MusicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384A027B4255B00837EBC /* MusicPresenter.swift */; };
+		461384A827B4255B00837EBC /* MusicInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384A127B4255B00837EBC /* MusicInteractor.swift */; };
+		461384B027B4257100837EBC /* PodcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 461384A927B4257100837EBC /* PodcastViewController.xib */; };
+		461384B127B4257100837EBC /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384AA27B4257100837EBC /* PodcastViewController.swift */; };
+		461384B227B4257100837EBC /* PodcastRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384AB27B4257100837EBC /* PodcastRouter.swift */; };
+		461384B327B4257100837EBC /* PodcastProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384AC27B4257100837EBC /* PodcastProvider.swift */; };
+		461384B427B4257100837EBC /* PodcastCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384AD27B4257100837EBC /* PodcastCoordinator.swift */; };
+		461384B527B4257100837EBC /* PodcastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384AE27B4257100837EBC /* PodcastPresenter.swift */; };
+		461384B627B4257100837EBC /* PodcastInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384AF27B4257100837EBC /* PodcastInteractor.swift */; };
+		461384BF27B4258D00837EBC /* BookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 461384B827B4258D00837EBC /* BookViewController.xib */; };
+		461384C027B4258D00837EBC /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384B927B4258D00837EBC /* BookViewController.swift */; };
+		461384C127B4258D00837EBC /* BookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384BA27B4258D00837EBC /* BookRouter.swift */; };
+		461384C227B4258D00837EBC /* BookProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384BB27B4258D00837EBC /* BookProvider.swift */; };
+		461384C327B4258D00837EBC /* BookCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384BC27B4258D00837EBC /* BookCoordinator.swift */; };
+		461384C427B4258D00837EBC /* BookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384BD27B4258D00837EBC /* BookPresenter.swift */; };
+		461384C527B4258D00837EBC /* BookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384BE27B4258D00837EBC /* BookInteractor.swift */; };
+		461384C827B426DA00837EBC /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384C627B426DA00837EBC /* HomeTabBarViewController.swift */; };
+		461384C927B426DB00837EBC /* HomeTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 461384C727B426DA00837EBC /* HomeTabBarViewController.xib */; };
+		461384CB27B4270E00837EBC /* HomeTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384CA27B4270E00837EBC /* HomeTabBarCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +75,37 @@
 		4613845127B04CD700837EBC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		4613845327B05E2400837EBC /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
 		4613845627B2D77900837EBC /* MusicServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServerModel.swift; sourceTree = "<group>"; };
+		4613848827B4244900837EBC /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		4613848927B4244900837EBC /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		4613848A27B4244900837EBC /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
+		4613848B27B4244900837EBC /* TestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProvider.swift; sourceTree = "<group>"; };
+		4613848C27B4244900837EBC /* TestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoordinator.swift; sourceTree = "<group>"; };
+		4613848D27B4244900837EBC /* TestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
+		4613848E27B4244900837EBC /* TestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInteractor.swift; sourceTree = "<group>"; };
+		4613849B27B4255B00837EBC /* MusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
+		4613849C27B4255B00837EBC /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		4613849D27B4255B00837EBC /* MusicRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRouter.swift; sourceTree = "<group>"; };
+		4613849E27B4255B00837EBC /* MusicProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicProvider.swift; sourceTree = "<group>"; };
+		4613849F27B4255B00837EBC /* MusicCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCoordinator.swift; sourceTree = "<group>"; };
+		461384A027B4255B00837EBC /* MusicPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPresenter.swift; sourceTree = "<group>"; };
+		461384A127B4255B00837EBC /* MusicInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInteractor.swift; sourceTree = "<group>"; };
+		461384A927B4257100837EBC /* PodcastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastViewController.xib; sourceTree = "<group>"; };
+		461384AA27B4257100837EBC /* PodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
+		461384AB27B4257100837EBC /* PodcastRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastRouter.swift; sourceTree = "<group>"; };
+		461384AC27B4257100837EBC /* PodcastProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastProvider.swift; sourceTree = "<group>"; };
+		461384AD27B4257100837EBC /* PodcastCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCoordinator.swift; sourceTree = "<group>"; };
+		461384AE27B4257100837EBC /* PodcastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPresenter.swift; sourceTree = "<group>"; };
+		461384AF27B4257100837EBC /* PodcastInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastInteractor.swift; sourceTree = "<group>"; };
+		461384B827B4258D00837EBC /* BookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookViewController.xib; sourceTree = "<group>"; };
+		461384B927B4258D00837EBC /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		461384BA27B4258D00837EBC /* BookRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRouter.swift; sourceTree = "<group>"; };
+		461384BB27B4258D00837EBC /* BookProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookProvider.swift; sourceTree = "<group>"; };
+		461384BC27B4258D00837EBC /* BookCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoordinator.swift; sourceTree = "<group>"; };
+		461384BD27B4258D00837EBC /* BookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPresenter.swift; sourceTree = "<group>"; };
+		461384BE27B4258D00837EBC /* BookInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInteractor.swift; sourceTree = "<group>"; };
+		461384C627B426DA00837EBC /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		461384C727B426DA00837EBC /* HomeTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarViewController.xib; sourceTree = "<group>"; };
+		461384CA27B4270E00837EBC /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +171,11 @@
 		4613843927B0416E00837EBC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4613849927B4250A00837EBC /* BooksView */,
+				4613849827B4250100837EBC /* PodcastView */,
+				4613849727B424F600837EBC /* MusicView */,
+				4613849627B424E800837EBC /* HomeTabBar */,
+				4613848727B4243000837EBC /* Test */,
 				4613843A27B0417700837EBC /* SplashView */,
 			);
 			path = Sources;
@@ -151,6 +218,72 @@
 				4613845627B2D77900837EBC /* MusicServerModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4613848727B4243000837EBC /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				4613848827B4244900837EBC /* TestViewController.xib */,
+				4613848927B4244900837EBC /* TestViewController.swift */,
+				4613848A27B4244900837EBC /* TestRouter.swift */,
+				4613848B27B4244900837EBC /* TestProvider.swift */,
+				4613848C27B4244900837EBC /* TestCoordinator.swift */,
+				4613848D27B4244900837EBC /* TestPresenter.swift */,
+				4613848E27B4244900837EBC /* TestInteractor.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		4613849627B424E800837EBC /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				461384C627B426DA00837EBC /* HomeTabBarViewController.swift */,
+				461384C727B426DA00837EBC /* HomeTabBarViewController.xib */,
+				461384CA27B4270E00837EBC /* HomeTabBarCoordinator.swift */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
+		4613849727B424F600837EBC /* MusicView */ = {
+			isa = PBXGroup;
+			children = (
+				4613849B27B4255B00837EBC /* MusicViewController.xib */,
+				4613849C27B4255B00837EBC /* MusicViewController.swift */,
+				4613849D27B4255B00837EBC /* MusicRouter.swift */,
+				4613849E27B4255B00837EBC /* MusicProvider.swift */,
+				4613849F27B4255B00837EBC /* MusicCoordinator.swift */,
+				461384A027B4255B00837EBC /* MusicPresenter.swift */,
+				461384A127B4255B00837EBC /* MusicInteractor.swift */,
+			);
+			path = MusicView;
+			sourceTree = "<group>";
+		};
+		4613849827B4250100837EBC /* PodcastView */ = {
+			isa = PBXGroup;
+			children = (
+				461384A927B4257100837EBC /* PodcastViewController.xib */,
+				461384AA27B4257100837EBC /* PodcastViewController.swift */,
+				461384AB27B4257100837EBC /* PodcastRouter.swift */,
+				461384AC27B4257100837EBC /* PodcastProvider.swift */,
+				461384AD27B4257100837EBC /* PodcastCoordinator.swift */,
+				461384AE27B4257100837EBC /* PodcastPresenter.swift */,
+				461384AF27B4257100837EBC /* PodcastInteractor.swift */,
+			);
+			path = PodcastView;
+			sourceTree = "<group>";
+		};
+		4613849927B4250A00837EBC /* BooksView */ = {
+			isa = PBXGroup;
+			children = (
+				461384B827B4258D00837EBC /* BookViewController.xib */,
+				461384B927B4258D00837EBC /* BookViewController.swift */,
+				461384BA27B4258D00837EBC /* BookRouter.swift */,
+				461384BB27B4258D00837EBC /* BookProvider.swift */,
+				461384BC27B4258D00837EBC /* BookCoordinator.swift */,
+				461384BD27B4258D00837EBC /* BookPresenter.swift */,
+				461384BE27B4258D00837EBC /* BookInteractor.swift */,
+			);
+			path = BooksView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +345,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4613842C27B03B8500837EBC /* LaunchScreen.storyboard in Resources */,
+				461384C927B426DB00837EBC /* HomeTabBarViewController.xib in Resources */,
 				4613843E27B0419F00837EBC /* SplashViewController.xib in Resources */,
+				461384BF27B4258D00837EBC /* BookViewController.xib in Resources */,
+				461384A227B4255B00837EBC /* MusicViewController.xib in Resources */,
+				4613848F27B4244900837EBC /* TestViewController.xib in Resources */,
 				4613842927B03B8500837EBC /* Assets.xcassets in Resources */,
+				461384B027B4257100837EBC /* PodcastViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,17 +362,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461384CB27B4270E00837EBC /* HomeTabBarCoordinator.swift in Sources */,
+				461384A427B4255B00837EBC /* MusicRouter.swift in Sources */,
+				461384C427B4258D00837EBC /* BookPresenter.swift in Sources */,
+				461384B627B4257100837EBC /* PodcastInteractor.swift in Sources */,
+				4613849027B4244900837EBC /* TestViewController.swift in Sources */,
+				461384C327B4258D00837EBC /* BookCoordinator.swift in Sources */,
+				461384A527B4255B00837EBC /* MusicProvider.swift in Sources */,
 				4613845027B04CC300837EBC /* NetworkService.swift in Sources */,
+				461384C227B4258D00837EBC /* BookProvider.swift in Sources */,
 				4613845427B05E2400837EBC /* SplashProvider.swift in Sources */,
+				461384C827B426DA00837EBC /* HomeTabBarViewController.swift in Sources */,
 				4613844027B0420C00837EBC /* SplashPresenter.swift in Sources */,
+				461384C127B4258D00837EBC /* BookRouter.swift in Sources */,
 				4613844827B048AC00837EBC /* SplashCoordinator.swift in Sources */,
+				461384B227B4257100837EBC /* PodcastRouter.swift in Sources */,
+				4613849327B4244900837EBC /* TestCoordinator.swift in Sources */,
+				461384A727B4255B00837EBC /* MusicPresenter.swift in Sources */,
+				461384B427B4257100837EBC /* PodcastCoordinator.swift in Sources */,
 				4613844427B043FF00837EBC /* SplashInteractor.swift in Sources */,
 				4613844627B0441000837EBC /* SplashRouter.swift in Sources */,
+				4613849427B4244900837EBC /* TestPresenter.swift in Sources */,
 				4613842027B03B7300837EBC /* AppDelegate.swift in Sources */,
+				4613849227B4244900837EBC /* TestProvider.swift in Sources */,
+				461384C527B4258D00837EBC /* BookInteractor.swift in Sources */,
 				4613843827B03E8100837EBC /* BaseVIPER.swift in Sources */,
+				461384A627B4255B00837EBC /* MusicCoordinator.swift in Sources */,
+				461384B327B4257100837EBC /* PodcastProvider.swift in Sources */,
+				461384A827B4255B00837EBC /* MusicInteractor.swift in Sources */,
 				4613843D27B0419F00837EBC /* SplashViewController.swift in Sources */,
 				4613844A27B04C0700837EBC /* AppCoreCoordinator.swift in Sources */,
+				4613849527B4244900837EBC /* TestInteractor.swift in Sources */,
+				4613849127B4244900837EBC /* TestRouter.swift in Sources */,
+				461384A327B4255B00837EBC /* MusicViewController.swift in Sources */,
+				461384B527B4257100837EBC /* PodcastPresenter.swift in Sources */,
 				4613844E27B04CB500837EBC /* NetworkError.swift in Sources */,
+				461384B127B4257100837EBC /* PodcastViewController.swift in Sources */,
+				461384C027B4258D00837EBC /* BookViewController.swift in Sources */,
 				4613845727B2D77900837EBC /* MusicServerModel.swift in Sources */,
 				4613845227B04CD700837EBC /* Utils.swift in Sources */,
 			);
