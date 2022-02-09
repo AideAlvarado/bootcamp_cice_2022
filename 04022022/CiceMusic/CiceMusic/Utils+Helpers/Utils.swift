@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum HTTPMethods: String {
     case get = "GET"
@@ -51,4 +52,15 @@ class Utils {
         let kPrefer = UserDefaults.standard
     }
 }
+
+protocol ReuseIdentifierProtocol: AnyObject {
+    static var defaultReuseIdentifier: String { get }
+}
+
+extension ReuseIdentifierProtocol where Self: UIView {
+    static var defaultReuseIdentifier: String {
+        return NSStringFromClass(self).components(separatedBy: ".").last!
+    }
+}
+
 
