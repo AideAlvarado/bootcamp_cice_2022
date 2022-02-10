@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Kingfisher
 
 protocol MusicCellInputProtocol {
-    func setupCell(data:ResultMusic)
+    func setupCell(data: GenericResult)
 }
 
 class MusicCell: UITableViewCell, ReuseIdentifierProtocol {
@@ -34,8 +35,35 @@ class MusicCell: UITableViewCell, ReuseIdentifierProtocol {
 }
 
 extension MusicCell: MusicCellInputProtocol {
-    func setupCell(data: ResultMusic) {
-        //
+    func setupCell(data: GenericResult) {
+        
+        let url = URL(string: data.artworkUrl100 ?? "")
+        let processor = DownsamplingImageProcessor(size: artistWorkimageView.bounds.size)
+                     |> RoundCornerImageProcessor(cornerRadius: 20)
+        artistWorkimageView.kf.indicatorType = .activity
+        artistWorkimageView.kf.setImage(
+            with: url,
+            placeholder: UIImage(named: "placeholder"),
+            options: [
+                .processor(processor),
+                .scaleFactor(UIScreen.main.scale),
+                .transition(.fade(1)),
+                .cacheOriginalImage
+            ])
+        {
+            result in
+            switch result {
+            case .success(let value):
+                print("Task done for: \(value.source.url?.absoluteString ?? "")")
+            case .failure(let error):
+                print("Job failed: \(error.localizedDescription)")
+            }
+        }
+        
+        self.artisnameLBL.text = data.artistName
+        self.releaseDateLBL.text = data.releaseDate
+        self.kindLBLB.text = data.kind
     }
 }
+
 

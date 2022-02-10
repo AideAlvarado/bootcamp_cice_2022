@@ -62,7 +62,6 @@ struct Link: Codable {
 }
 
 // MARK: - Result
-//se ha cambiado Result por ResultMusic
 struct ResultMusic: Codable {
     let artistName: String?
     let id: String?
@@ -103,4 +102,5 @@ struct Genre: Codable {
         case url = "url"
     }
 }
+
 

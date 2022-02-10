@@ -27,8 +27,6 @@ POSSIBILITY OF SUCH DAMAGE.
 import Foundation
 
 
-// MARK: - module builder
-
 final class PodcastCoordinator {
 
     static func navigation(dto: PodcastCoordinatorDTO? = nil) -> BaseNavigation {

@@ -57,6 +57,8 @@
 		461384CF27B444A600837EBC /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384CD27B444A600837EBC /* MusicCell.swift */; };
 		461384D027B444A600837EBC /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 461384CE27B444A600837EBC /* MusicCell.xib */; };
 		461384D327B4496A00837EBC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 461384D227B4496A00837EBC /* Kingfisher */; };
+		461384D527B58F4100837EBC /* PodcastServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384D427B58F4100837EBC /* PodcastServerModel.swift */; };
+		461384D827B596AF00837EBC /* AppleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384D727B596AF00837EBC /* AppleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +113,8 @@
 		461384CA27B4270E00837EBC /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
 		461384CD27B444A600837EBC /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
 		461384CE27B444A600837EBC /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		461384D427B58F4100837EBC /* PodcastServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastServerModel.swift; sourceTree = "<group>"; };
+		461384D727B596AF00837EBC /* AppleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 		4613841E27B03B7300837EBC /* CiceMusic */ = {
 			isa = PBXGroup;
 			children = (
+				461384D627B5969400837EBC /* ViewModels */,
 				4613845527B2D75C00837EBC /* Models */,
 				4613844C27B04C8D00837EBC /* Utils+Helpers */,
 				4613844B27B04C7F00837EBC /* NetworkService */,
@@ -222,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				4613845627B2D77900837EBC /* MusicServerModel.swift */,
+				461384D427B58F4100837EBC /* PodcastServerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,6 +306,14 @@
 				461384CE27B444A600837EBC /* MusicCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		461384D627B5969400837EBC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				461384D727B596AF00837EBC /* AppleViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +421,7 @@
 				4613844627B0441000837EBC /* SplashRouter.swift in Sources */,
 				4613849427B4244900837EBC /* TestPresenter.swift in Sources */,
 				4613842027B03B7300837EBC /* AppDelegate.swift in Sources */,
+				461384D527B58F4100837EBC /* PodcastServerModel.swift in Sources */,
 				4613849227B4244900837EBC /* TestProvider.swift in Sources */,
 				461384C527B4258D00837EBC /* BookInteractor.swift in Sources */,
 				4613843827B03E8100837EBC /* BaseVIPER.swift in Sources */,
@@ -425,6 +440,7 @@
 				461384C027B4258D00837EBC /* BookViewController.swift in Sources */,
 				4613845727B2D77900837EBC /* MusicServerModel.swift in Sources */,
 				4613845227B04CD700837EBC /* Utils.swift in Sources */,
+				461384D827B596AF00837EBC /* AppleViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
