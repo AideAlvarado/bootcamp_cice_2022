@@ -27,37 +27,38 @@ POSSIBILITY OF SUCH DAMAGE.
 import Foundation
 
 
-final class BookCoordinator {
+final class AppleGenericDetailCoordinator {
 
-    static func navigation(dto: BookCoordinatorDTO? = nil) -> BaseNavigation {
-        BaseNavigation(rootViewController: view())
+    static func navigation(dto: AppleGenericDetailCoordinatorDTO? = nil) -> BaseNavigation {
+        BaseNavigation(rootViewController: view(dto: dto))
     }
     
-    static func view(dto: BookCoordinatorDTO? = nil) -> BookViewController & BookPresenterOutputProtocol {
-        let vc = BookViewController()
-        vc.presenter = presenter(vc: vc)
+    static func view(dto: AppleGenericDetailCoordinatorDTO? = nil) -> AppleGenericDetailViewController & AppleGenericDetailPresenterOutputProtocol {
+        let vc = AppleGenericDetailViewController()
+        vc.presenter = presenter(vc: vc, dto: dto)
         return vc
     }
     
-    static func presenter(vc: BookViewController) -> BookPresenterInputProtocol & BookInteractorOutputProtocol {
-        let presenter = BookPresenter(vc: vc)
+    static func presenter(vc: AppleGenericDetailViewController, dto: AppleGenericDetailCoordinatorDTO? = nil) -> AppleGenericDetailPresenterInputProtocol & AppleGenericDetailInteractorOutputProtocol {
+        let presenter = AppleGenericDetailPresenter(vc: vc)
         presenter.interactor = interactor(presenter: presenter)
         presenter.router = router(vc: vc)
+        presenter.dataModel = dto?.dataModel
         return presenter
     }
     
-    static func interactor(presenter: BookPresenter) -> BookInteractorInputProtocol {
-        let interactor = BookInteractor(presenter: presenter)
+    static func interactor(presenter: AppleGenericDetailPresenter) -> AppleGenericDetailInteractorInputProtocol {
+        let interactor = AppleGenericDetailInteractor(presenter: presenter)
         return interactor
     }
     
-    static func router(vc: BookViewController) -> BookRouterInputProtocol {
-        let router = BookRouter(view: vc)
+    static func router(vc: AppleGenericDetailViewController) -> AppleGenericDetailRouterInputProtocol {
+        let router = AppleGenericDetailRouter(view: vc)
         return router
     }
     
 }
 
-struct BookCoordinatorDTO {
-    
+struct AppleGenericDetailCoordinatorDTO {
+    var dataModel: GenericResult?
 }

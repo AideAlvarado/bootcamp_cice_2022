@@ -24,23 +24,35 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
-// input protocol
+
+// Input Protocol
 protocol BookProviderInputProtocol {
-    
-    
+    func fetchData(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void)
 }
 
-class BookProvider:BookProviderInputProtocol {
+final class BookProvider: BookProviderInputProtocol {
     
     let networkService: NetworkServiceProtocol = NetworkService()
+    
+    func fetchData(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void) {
+        self.networkService.requestGeneric(requestPayload: BookRequestDTO.requestData(numeroItems: "99"),
+                                           entityClass: AppleServerModel.self) { [weak self] (result) in
+            guard self != nil else { return }
+            guard let resultUnw = result else { return }
+            completioHadler(.success(resultUnw))
+        } failure: { (error) in
+            completioHadler(.failure(error))
+        }
+    }
+    
 }
-
 
 struct BookRequestDTO {
     
     static func requestData(numeroItems: String) -> RequestDTO {
         let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.music, arguments: argument)
+        let urlComplete = String(format: URLEnpoint.books, arguments: argument)
         let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete)
         return request
-}}
+    }
+}

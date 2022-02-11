@@ -1,6 +1,5 @@
 /*
 
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -26,38 +25,36 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
+// Input Protocol
+protocol AppleGenericDetailProviderInputProtocol {
+    func fetchData(completioHadler: @escaping (Result<AppServerModel, NetworkError>) -> Void)
+}
 
-final class BookCoordinator {
+final class AppleGenericDetailProvider: AppleGenericDetailProviderInputProtocol {
+    
+    let networkService: NetworkServiceProtocol = NetworkService()
+    
+    func fetchData(completioHadler: @escaping (Result<AppServerModel, NetworkError>) -> Void) {
+        
+        self.networkService.requestGeneric(requestPayload: AppleGenericDetailRequestDTO.requestData(numeroItems: "10"),
+                                           entityClass: AppServerModel.self) { [weak self] (result) in
+            guard self != nil else { return }
+            guard let resultUnw = result else { return }
+            completioHadler(.success(resultUnw))
+        } failure: { (error) in
+            completioHadler(.failure(error))
+        }
 
-    static func navigation(dto: BookCoordinatorDTO? = nil) -> BaseNavigation {
-        BaseNavigation(rootViewController: view())
-    }
-    
-    static func view(dto: BookCoordinatorDTO? = nil) -> BookViewController & BookPresenterOutputProtocol {
-        let vc = BookViewController()
-        vc.presenter = presenter(vc: vc)
-        return vc
-    }
-    
-    static func presenter(vc: BookViewController) -> BookPresenterInputProtocol & BookInteractorOutputProtocol {
-        let presenter = BookPresenter(vc: vc)
-        presenter.interactor = interactor(presenter: presenter)
-        presenter.router = router(vc: vc)
-        return presenter
-    }
-    
-    static func interactor(presenter: BookPresenter) -> BookInteractorInputProtocol {
-        let interactor = BookInteractor(presenter: presenter)
-        return interactor
-    }
-    
-    static func router(vc: BookViewController) -> BookRouterInputProtocol {
-        let router = BookRouter(view: vc)
-        return router
     }
     
 }
 
-struct BookCoordinatorDTO {
+struct AppleGenericDetailRequestDTO {
     
+    static func requestData(numeroItems: String) -> RequestDTO {
+        let argument: [CVarArg] = [numeroItems]
+        let urlComplete = String(format: URLEnpoint.apps, arguments: argument)
+        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete)
+        return request
+    }
 }
