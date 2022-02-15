@@ -32,7 +32,11 @@ extension SplashPresenter: SplashPresenterInputProtocol {
     }
     
     func showHometabBar() {
-        self.router?.showHometabBarRouter(dataSource: self.dataSourceViewModel)
+        if true/*Utils.Constantes().kPrefer.bool(forKey: Utils.Constantes().kUsuarioLogado)*/ {
+            self.router?.showHometabBarRouter(dataSource: self.dataSourceViewModel)
+        } else {
+            self.router?.showLoginViewRouter(dataSource: self.dataSourceViewModel)
+        }
     }
 }
 
@@ -50,7 +54,7 @@ extension SplashPresenter: SplashInteractorOutputProtocol{
         self.router?.showAlert(title: "\(error.status)",
                                message: error.status.rawValue == -1011
                                 ? error.localizedDescription
-                                : "AQUI Aide")
+                                : "AQUI AIDE")
     }
     
 }
