@@ -59,7 +59,7 @@ extension MusicPresenter: MusicPresenterInputProtocol {
         return self.dataSourceViewModel[indexPath]
     }
     
-    func didSelectRow(data: GenericResult) {
+    func didSelectRow(data: GenericResult){
         self.router?.didSelectRowRouter(data: data)
     }
 }
@@ -73,4 +73,5 @@ extension MusicPresenter: MusicInteractorOutputProtocol {
         self.viewController?.reloadInformationInView()
     }
 }
+
 

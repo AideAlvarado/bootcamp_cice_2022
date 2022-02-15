@@ -78,6 +78,9 @@
 		4613850227B83EEF00837EBC /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384FB27B83EEE00837EBC /* MenuCoordinator.swift */; };
 		4613850327B83EEF00837EBC /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384FC27B83EEE00837EBC /* MenuPresenter.swift */; };
 		4613850427B83EEF00837EBC /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384FD27B83EEE00837EBC /* MenuInteractor.swift */; };
+		4613850927BC13A200837EBC /* MenuServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613850827BC13A200837EBC /* MenuServerModel.swift */; };
+		4613851027BC26B400837EBC /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613850E27BC26B400837EBC /* MenuCell.swift */; };
+		4613851127BC26B400837EBC /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4613850F27BC26B400837EBC /* MenuCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +158,9 @@
 		461384FB27B83EEE00837EBC /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
 		461384FC27B83EEE00837EBC /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		461384FD27B83EEE00837EBC /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		4613850827BC13A200837EBC /* MenuServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuServerModel.swift; sourceTree = "<group>"; };
+		4613850E27BC26B400837EBC /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		4613850F27BC26B400837EBC /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +279,7 @@
 				461384D427B58F4100837EBC /* PodcastServerModel.swift */,
 				461384D927B6CB7000837EBC /* AppleServerModel.swift */,
 				461384EA27B6E4DF00837EBC /* AppServerModel.swift */,
+				4613850827BC13A200837EBC /* MenuServerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -398,6 +405,7 @@
 		461384F627B83EB500837EBC /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
+				4613850D27BC269700837EBC /* Cell */,
 				461384F727B83EEE00837EBC /* MenuViewController.xib */,
 				461384F827B83EEE00837EBC /* MenuViewController.swift */,
 				461384F927B83EEE00837EBC /* MenuRouter.swift */,
@@ -407,6 +415,15 @@
 				461384FD27B83EEE00837EBC /* MenuInteractor.swift */,
 			);
 			path = MenuView;
+			sourceTree = "<group>";
+		};
+		4613850D27BC269700837EBC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4613850E27BC26B400837EBC /* MenuCell.swift */,
+				4613850F27BC26B400837EBC /* MenuCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,6 +499,7 @@
 				461384A227B4255B00837EBC /* MusicViewController.xib in Resources */,
 				461384D027B444A600837EBC /* MusicCell.xib in Resources */,
 				461384FE27B83EEF00837EBC /* MenuViewController.xib in Resources */,
+				4613851127BC26B400837EBC /* MenuCell.xib in Resources */,
 				4613848F27B4244900837EBC /* TestViewController.xib in Resources */,
 				461384F027B82F5B00837EBC /* AppsCell.xib in Resources */,
 				4613842927B03B8500837EBC /* Assets.xcassets in Resources */,
@@ -522,6 +540,7 @@
 				4613844827B048AC00837EBC /* SplashCoordinator.swift in Sources */,
 				461384DA27B6CB7000837EBC /* AppleServerModel.swift in Sources */,
 				461384B227B4257100837EBC /* PodcastRouter.swift in Sources */,
+				4613851027BC26B400837EBC /* MenuCell.swift in Sources */,
 				4613849327B4244900837EBC /* TestCoordinator.swift in Sources */,
 				461384A727B4255B00837EBC /* MusicPresenter.swift in Sources */,
 				461384B427B4257100837EBC /* PodcastCoordinator.swift in Sources */,
@@ -547,6 +566,7 @@
 				461384A327B4255B00837EBC /* MusicViewController.swift in Sources */,
 				461384B527B4257100837EBC /* PodcastPresenter.swift in Sources */,
 				4613844E27B04CB500837EBC /* NetworkError.swift in Sources */,
+				4613850927BC13A200837EBC /* MenuServerModel.swift in Sources */,
 				461384CF27B444A600837EBC /* MusicCell.swift in Sources */,
 				461384B127B4257100837EBC /* PodcastViewController.swift in Sources */,
 				461384C027B4258D00837EBC /* BookViewController.swift in Sources */,
@@ -571,7 +591,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4613842E27B03B8600837EBC /* Debug */ = {
+		4613842E27B03B8600837EBC /* DEV */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -630,9 +650,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = DEV;
 		};
-		4613842F27B03B8600837EBC /* Release */ = {
+		4613842F27B03B8600837EBC /* PRE */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -685,9 +705,9 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = PRE;
 		};
-		4613843127B03B8600837EBC /* Debug */ = {
+		4613843127B03B8600837EBC /* DEV */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -712,15 +732,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aidealvarado..CiceMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "CiceMusic/MenuLateral/CiceMusic-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Debug;
+			name = DEV;
 		};
-		4613843227B03B8600837EBC /* Release */ = {
+		4613843227B03B8600837EBC /* PRE */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -745,12 +766,101 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aidealvarado..CiceMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRE;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "CiceMusic/MenuLateral/CiceMusic-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Release;
+			name = PRE;
+		};
+		4613850527B846A800837EBC /* PRO */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = PRO;
+		};
+		4613850627B846A800837EBC /* PRO */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CiceMusic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidealvarado..CiceMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CiceMusic/MenuLateral/CiceMusic-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = PRO;
 		};
 /* End XCBuildConfiguration section */
 
@@ -758,20 +868,22 @@
 		4613841727B03B7300837EBC /* Build configuration list for PBXProject "CiceMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4613842E27B03B8600837EBC /* Debug */,
-				4613842F27B03B8600837EBC /* Release */,
+				4613842E27B03B8600837EBC /* DEV */,
+				4613842F27B03B8600837EBC /* PRE */,
+				4613850527B846A800837EBC /* PRO */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = DEV;
 		};
 		4613843027B03B8600837EBC /* Build configuration list for PBXNativeTarget "CiceMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4613843127B03B8600837EBC /* Debug */,
-				4613843227B03B8600837EBC /* Release */,
+				4613843127B03B8600837EBC /* DEV */,
+				4613843227B03B8600837EBC /* PRE */,
+				4613850627B846A800837EBC /* PRO */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = DEV;
 		};
 /* End XCConfigurationList section */
 
