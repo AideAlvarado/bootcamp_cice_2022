@@ -27,14 +27,24 @@ import Foundation
 import UIKit
 // Input del Router
 protocol LoginRouterInputProtocol {
-
+    func showHomeTabBar(data: [MenuResponse])
 }
 
 final class LoginRouter: BaseRouter<LoginViewController> {
-        
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    let appCore: AppCoreCoordinatorProtocol = AppCoreCoordinator()
 
 }
 // Input del Router
 extension LoginRouter: LoginRouterInputProtocol {
-    
+    func showHomeTabBar(data: [MenuResponse]) {
+        //
+        DispatchQueue.main.async {
+            let vc = HomeTabBarCoordinator.tabBarController()
+            vc.modalTransitionStyle = .coverVertical
+            vc.modalPresentationStyle = self.delegate.window{
+                self.appCore.createSlidingMenu(window: windowUnw, vc: vc, menuDto: data)
+            }
+        }
+    }
 }

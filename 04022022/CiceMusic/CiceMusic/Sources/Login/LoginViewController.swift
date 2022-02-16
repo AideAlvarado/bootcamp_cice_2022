@@ -103,10 +103,7 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
     }
     
     private func mostrarHomeTabBar() {
-//        let vc = HomeTabBarViewCoordinator.homeViewController()
-//        vc.modalTransitionStyle = .coverVertical
-//        vc.modalPresentationStyle = .fullScreen
-//        self.present(vc, animated: true, completion: nil)
+        self.presenter?.showHometabBar()
     }
 
 }

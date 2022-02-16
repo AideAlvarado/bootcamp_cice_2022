@@ -27,8 +27,6 @@ POSSIBILITY OF SUCH DAMAGE.
 import Foundation
 
 
-// MARK: - module builder
-
 final class LoginCoordinator {
 
     static func navigation(dto: LoginCoordinatorDTO? = nil) -> BaseNavigation {
@@ -37,7 +35,7 @@ final class LoginCoordinator {
     
     static func view(dto: LoginCoordinatorDTO? = nil) -> LoginViewController & LoginPresenterOutputProtocol {
         let vc = LoginViewController()
-        vc.presenter = presenter(vc: vc)
+        vc.presenter = presenter(vc: vc, dto: dto)
         return vc
     }
     
@@ -61,5 +59,5 @@ final class LoginCoordinator {
 }
 
 struct LoginCoordinatorDTO {
-    
+    var dataModel: [MenuResponse]?
 }
