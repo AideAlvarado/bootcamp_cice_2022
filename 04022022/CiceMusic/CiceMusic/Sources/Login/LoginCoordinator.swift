@@ -39,8 +39,9 @@ final class LoginCoordinator {
         return vc
     }
     
-    static func presenter(vc: LoginViewController) -> LoginPresenterInputProtocol & LoginInteractorOutputProtocol {
+    static func presenter(vc: LoginViewController, dto: LoginCoordinatorDTO? = nil) -> LoginPresenterInputProtocol & LoginInteractorOutputProtocol {
         let presenter = LoginPresenter(vc: vc)
+        presenter.dataModel = dto
         presenter.interactor = interactor(presenter: presenter)
         presenter.router = router(vc: vc)
         return presenter

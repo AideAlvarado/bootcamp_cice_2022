@@ -10,7 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertDefaultViewController" customModule="CiceMusic" customModuleProvider="target">
             <connections>
+                <outlet property="alertContentView" destination="GFk-LQ-AMH" id="7Oh-I3-h7h"/>
+                <outlet property="backgroundContentView" destination="YhC-wZ-YNh" id="N9f-a8-NCu"/>
                 <outlet property="closeACTION" destination="MWh-Fj-gcN" id="PqI-Ku-aRd"/>
+                <outlet property="closeBTN" destination="MWh-Fj-gcN" id="0NG-v8-t0S"/>
+                <outlet property="constHeightButtonClose" destination="kGQ-zi-lJx" id="FjT-kS-MI1"/>
+                <outlet property="constHeightCancelButton" destination="Osg-Bp-1xu" id="YpP-vx-eWi"/>
                 <outlet property="messageAlertLBL" destination="XdN-GE-tby" id="lvG-VB-aGJ"/>
                 <outlet property="primaryBTN" destination="nwc-gD-z6q" id="r3R-Sx-nMm"/>
                 <outlet property="secondaryBTN" destination="pAe-Qs-r8g" id="Dzj-cr-1if"/>
@@ -32,10 +37,12 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWh-Fj-gcN">
                             <rect key="frame" x="15" y="108" width="36" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="36" id="QW5-Mg-h5H"/>
                                 <constraint firstAttribute="height" constant="36" id="kGQ-zi-lJx"/>
                             </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="X">
                                 <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
@@ -78,7 +85,8 @@
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="_Titulo del Alert View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YX8-DW-DAq">
                             <rect key="frame" x="39" y="147" width="252" height="20.5"/>
-                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -130,9 +138,6 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

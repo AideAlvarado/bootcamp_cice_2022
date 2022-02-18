@@ -52,28 +52,25 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
             Utils.Constantes().kPrefer.setValue(self.usuarioLogado, forKey: Utils.Constantes().kUsuarioLogado)
             self.configuracionUI(color: #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1))
         } else {
-//            self.present(Utils.muestraAlerta(titulo: "hey!",
-//                                             mensaje: "Rellena el username y el password",
-//                                             completionHandler: nil),
-//                         animated: true,
-//                         completion: nil)
+            self.presenter?.showCustomAlertFailure()
         }
+    }
+    
+    @IBAction func showOrNotPassword(_ sender: Any) {
+        self.passwordTF.isSecureTextEntry = false
     }
     
     @IBAction func loginACTION(_ sender: Any) {
         if datosCompletados() {
             self.borrarDatosFormulario()
         } else {
-//            self.present(Utils.muestraAlerta(titulo: "hey!",
-//                                             mensaje: "Rellena el username y el password",
-//                                             completionHandler: nil),
-//                         animated: true,
-//                         completion: nil)
+            self.presenter?.showCustomAlertFailure()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.passwordTF.isSecureTextEntry = true
         self.configuracionUI(color: #colorLiteral(red: 1, green: 0.2827598444, blue: 0.25824927, alpha: 1))
         // Do any additional setup after loading the view.
     }
@@ -103,7 +100,7 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
     }
     
     private func mostrarHomeTabBar() {
-        self.presenter?.showHometabBar()
+        self.presenter?.showCustomAlertSuccess()
     }
 
 }

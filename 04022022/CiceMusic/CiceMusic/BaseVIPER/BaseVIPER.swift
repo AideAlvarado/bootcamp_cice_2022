@@ -6,11 +6,18 @@
 //
 
 import UIKit
+import PKHUD
 
 // MARK: - ViewController
-// es la base de la vista:
 class BaseView<P>: UIViewController {
     var presenter: P?
+    
+    func showLoading() {
+        HUD.show(.progress)
+    }
+    func hideLoading(){
+        HUD.hide()
+    }
 }
 // MARK: - Presenter, es el arquitecto del viper
 //conexion de output hacia la vista "V" / "I" input del interactor (gestor de logica de negocio) / "R"  conexion de enrutador de nvegacion

@@ -24,42 +24,45 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
+
 import UIKit
+import MessageUI
 
 // Output del Presenter
-protocol MusicPresenterOutputProtocol {
+protocol MenuPresenterOutputProtocol {
     func reloadInformationInView()
 }
 
-class MusicViewController: BaseView<MusicPresenterInputProtocol> {
+class MenuViewController: BaseView<MenuPresenterInputProtocol> {
 
-    // MARK: - IBOutlets
-    @IBOutlet weak var musicTableView: UITableView!
+    // MARK: - IBOutlet
+    
+    @IBOutlet weak var menuTableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter?.loadDataFromInteractor()
+        self.presenter?.fetchDataFromPresenter()
         self.configuracionTV()
-        self.menuButton()
     }
     
     private func configuracionTV() {
-        self.musicTableView.delegate = self
-        self.musicTableView.dataSource = self
-        self.musicTableView.register(UINib(nibName: MusicCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: MusicCell.defaultReuseIdentifier)
+        self.menuTableview.delegate = self
+        self.menuTableview.dataSource = self
+        self.menuTableview.register(UINib(nibName: MenuCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: MenuCell.defaultReuseIdentifier)
     }
 
 }
 
 // Output del Presenter
-extension MusicViewController: MusicPresenterOutputProtocol {
+extension MenuViewController: MenuPresenterOutputProtocol {
 
     func reloadInformationInView() {
-        self.musicTableView.reloadData()
+        self.menuTableview.reloadData()
     }
 }
 
-extension MusicViewController: UITableViewDelegate, UITableViewDataSource {
+extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -69,20 +72,32 @@ extension MusicViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.musicTableView.dequeueReusableCell(withIdentifier: MusicCell.defaultReuseIdentifier, for: indexPath) as! MusicCell
-        if let model = self.presenter?.informationForCell(indexPath: indexPath.row) {
-            cell.setupCell(data: model)
+        let menuCell = self.menuTableview.dequeueReusableCell(withIdentifier: MenuCell.defaultReuseIdentifier, for: indexPath) as! MenuCell
+        if let model = self.presenter?.informationForRow(indexPath: indexPath.row) {
+            menuCell.setupCell(data: model)
         }
-        return cell
+        return menuCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let model = self.presenter?.informationForCell(indexPath: indexPath.row) {
-            self.presenter?.didSelectRow(data: model)
+        switch indexPath.row {
+        case 0:
+            self.presenter?.showWebSite()
+        case 1:
+            self.presenter?.showMusicViewController()
+        case 2:
+            self.presenter?.showCalendarViewController()
+        case 3:
+            self.presenter?.showTipsViewController()
+        default:
+            self.presenter?.sendMail(canSendMail: MFMailComposeViewController.canSendMail() ? true : false,
+                                     delegate: self)
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 143
-    }
+
+}
+
+extension MenuViewController: MFMailComposeViewControllerDelegate {
+    
 }
