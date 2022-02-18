@@ -5,7 +5,7 @@
 //  Created by Aide Alvarado on 16/2/22.
 //
 
-mport Foundation
+import Foundation
 
 enum DefaultAlertType: Int {
     case none
