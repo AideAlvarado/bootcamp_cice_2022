@@ -12,7 +12,7 @@ struct ContentView: View {
             HeaderComponentes()
             Text("Holi Aidely!")
                 .font(.title)
-                
+            
             Button {
                 // aqui es en dnd se captura la accion del boton
             } label: {
@@ -27,8 +27,8 @@ struct ContentView: View {
             .background(Color.yellow)
             .cornerRadius(10)
             .shadow(radius: 10)
-
-
+            
+            
         }
     }
 }
@@ -45,9 +45,9 @@ struct RefactoringView: View {
                     .aspectRatio(contentMode: .fit)
                     .padding([.horizontal, .bottom], 20)
                     .shadow(color: Color.black.opacity(0.5),
-                       radius: 20,
-                       x: 5,
-                       y: 5)
+                            radius: 20,
+                            x: 5,
+                            y: 5)
                     .overlay {
                         Text("hi guys")
                             .foregroundColor(.red)
@@ -69,8 +69,8 @@ struct ShapesView: View {
                 .foregroundColor(.orange)
                 .padding(10)
                 .background(
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(.black)
+                    RoundedRectangle(cornerRadius: 20)
+                        .foregroundColor(.black)
                 )
                 .padding(8)
             Text("se puede ajustar el fondo pero NO con un shape")
@@ -104,8 +104,8 @@ struct VerticalStackView: View {
                     .padding()
                     .foregroundColor(.white)
                     .background(
-                    RoundedRectangle(cornerRadius: 20)
-                        .foregroundColor(.blue)
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(.blue)
                     )
                     .padding()
                 
@@ -123,14 +123,14 @@ struct VerticalStackView: View {
                     .padding()
                     .foregroundColor(.white)
                     .background(
-                    RoundedRectangle(cornerRadius: 20)
-                        .foregroundColor(.blue)
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(.blue)
                     )
                     .padding()
                 
-                               
+                
             }
-       
+            
         }
     }
 }
@@ -147,7 +147,7 @@ struct HorizontalStackView: View {
                 }
                 .padding()
                 .border(Color.orange)
-                                
+                
                 HStack {
                     Image (systemName: "1.circle").foregroundColor(.green)
                     Image (systemName: "2.circle").foregroundColor(.white)
@@ -303,7 +303,7 @@ struct IntroZStackView: View {
                     Spacer()
                     HeaderComponentes()
                     Spacer()
-                   }
+                }
                 Text("esto es un ZStack")
                     .padding(.trailing, 20)
                     .background(.indigo)
@@ -318,7 +318,7 @@ struct IntroZStackView: View {
 
 struct BasicChangedCircle: View {
     // @state es una palabra reservada para cambiar el valor
-  @State  private var change = false
+    @State  private var change = false
     
     var body: some View {
         VStack(spacing: 20) {
@@ -414,61 +414,160 @@ struct CurvesAnimationsViewDos: View {
 }
 
 struct MenuAnimationView : View {
+    //esto es un valor bindeable
+    @State private var showButtonMenu = false
+    @State private var showButton1 = false // esta variable se lee/escribe en la memoria
+    @State private var showButton2 = false
+    @State private var showButton3 = false
     
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
-            VStack(spacing: 20) {
-                Text("Menu Flotante").font(.title)
-                Text("como les gusta a los androides").font(.callout)
-                Spacer()
- 
-            }
-            Group {
-                Button {
-                    <#code#>
-                } label: {
-                    Image(systemName: "bag.badge.plus")
-                        .foregroundColor(.cyan)
-                        .padding(24)
-                        .rotationEffect(Angle.degrees(0))
+        
+        NavigationView {
+            ZStack(alignment: .bottomTrailing) {
+                ScrollView {
+                    VStack(spacing: 20) {
+                        Text("Menu Flotante").font(.title)
+                        Text("como les gusta a los androides").font(.callout)
+                        Spacer()
+                        ShapesView()
+                        CurvesAnimationsView()
+                        Spacer()
+                        
+                    }
                 }
-                .background(
-                    Circle()
-                        .fill(Color.green)
-                        .shadow(color: Color.pink.opacity(0.3), radius: 10, x: 4, y: 4)
+                .frame(maxWidth: .infinity)
+            
+            Group {
+                boton1
+                boton2
+                boton3
+                botonMenu
+            }
+            .padding()
+            .foregroundColor(.cyan)
+            .animation(.default, value: self.showButtonMenu)
                 
-                )
-                .offset(x: 0, y: 0)
-                .opacity(1)
-
-                
+            Group {
+                NavigationLink(isActive: self.$showButton1) {
+                    BasicChangedCircle()
+                    
+                } label: {Text("")}
+                NavigationLink(isActive: self.$showButton2) {
+                    ContentView()
+                    
+                } label: {Text("")}
+                NavigationLink(isActive: self.$showButton3) {
+                    AlignmentHStackView()
+                    
+                } label: {Text("")}
             }
         }
-        
-        
+            .frame(maxWidth: .infinity)
+            .navigationTitle("Test Navigation")
     }
     }
     
+    var boton1: some View {
+        Button (action: {
+            self.showButton1.toggle()
+            self.showButtonMenu.toggle()
+        }, label: {
+            Image(systemName: "bag.badge.plus")
+                .padding(24)
+                .rotationEffect(Angle.degrees(self.showButtonMenu ? 0 : -90))
+        })
+            .background(
+                Circle()
+                    .fill(Color.green)
+                    .shadow(color: Color.pink.opacity(0.3), radius: 10, x: 4, y: 4)
+                
+            )
+            .offset(x: 0, y: self.showButtonMenu ? -150 : 0)
+            .opacity(self.showButtonMenu ? 1 : 0)
+    }
+    
+    var boton2: some View {
+        Button (action: {
+            self.showButton2.toggle()
+            self.showButtonMenu.toggle()
+        }, label: {
+            Image(systemName: "bag.badge.plus")
+                .padding(24)
+                .rotationEffect(Angle.degrees(self.showButtonMenu ? 0 : -90))
+        })
+            .background(
+                Circle()
+                    .fill(Color.green)
+                    .shadow(color: Color.pink.opacity(0.3), radius: 10, x: 4, y: 4)
+                
+            )
+            .offset(x: self.showButtonMenu ? -150 : 0, y: 0)
+            .opacity(self.showButtonMenu ? 1 : 0)
+    }
+    
+    var boton3: some View {
+        Button (action: {
+            self.showButton3.toggle()
+            self.showButtonMenu.toggle()
+        }, label: {
+            Image(systemName: "bag.badge.plus")
+            
+                .padding(24)
+                .rotationEffect(Angle.degrees(self.showButtonMenu ? 0 : -90))
+        })
+            .background(
+                Circle()
+                    .fill(Color.green)
+                    .shadow(color: Color.pink.opacity(0.3), radius: 10, x: 4, y: 4)
+                
+            )
+            .offset(x: self.showButtonMenu ? -100 : 0, y: self.showButtonMenu ? -100 : 0)
+            .opacity(self.showButtonMenu ? 1 : 0)
+    }
+    
+    
+    var botonMenu: some View {
+        Button (action: {
+            self.showButtonMenu.toggle()
+            
+        }, label: {
+            Image(systemName: "plus")
+                .padding(24)
+                .rotationEffect(Angle.degrees(0))
+        })
+            .background(
+                Circle()
+                    .fill(Color.green)
+                    .shadow(color: Color.pink.opacity(0.3), radius: 10, x: 4, y: 4)
+                
+            )
+            .offset(x: 0, y: 0)
+            .opacity(1)
+        
+    }
+    
+}
+
 
 
 
 
 /*
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
+ struct ContentView_Previews: PreviewProvider {
+ static var previews: some View {
  Group {
-        //ContentView()
-        //RefactoringView
-        //ShapesView
-        //VerticalStackView
-        //HorizontalStackView
-        //AlignmentHStackView
-        // HStackPriorityView().previewDevice("iPhone 12")
-        //BasicChangedCircle.previewDevice("iPhone 12")
-        //CurvesAnimationsView()
-        //CurvesAnimationsViewDos()
-            MenuAnimationView()
+ //ContentView()
+ //RefactoringView
+ //ShapesView
+ //VerticalStackView
+ //HorizontalStackView
+ //AlignmentHStackView
+ // HStackPriorityView().previewDevice("iPhone 12")
+ //BasicChangedCircle.previewDevice("iPhone 12")
+ //CurvesAnimationsView()
+ //CurvesAnimationsViewDos()
+ MenuAnimationView()
  }
  }
-}*/
+ }*/
 
