@@ -9,12 +9,41 @@ import SwiftUI
 
 struct MoviesView: View {
     
-    @ObservedObject var viewModel: MoviesViewModel
+    @StateObject var viewModel = MoviesViewModel()
     
     var body: some View {
-        VStack{
-            Text("2")
+        List{
+            Group{
+                if !self.viewModel.dataSourceNowPlaying.isEmpty {
+                    MoviesPosterCarrousel(title: "Now Playing",
+                                          moviesModel: self.viewModel.dataSourceNowPlaying,
+                                          isPoster: false)
+                }
+            }
+            Group{
+                if !self.viewModel.dataSourcePopular.isEmpty {
+                    MoviesPosterCarrousel(title: "Popular",
+                                          moviesModel: self.viewModel.dataSourcePopular,
+                                          isPoster: true)
+                }
+            }
+            Group{
+                if !self.viewModel.dataSourceTopRate.isEmpty {
+                    MoviesPosterCarrousel(title: "Top Rate",
+                                          moviesModel: self.viewModel.dataSourceTopRate,
+                                          isPoster: false)
+                }
+            }
+            Group{
+                if !self.viewModel.dataSourceUpcoming.isEmpty {
+                    MoviesPosterCarrousel(title: "UpComing",
+                                          moviesModel: self.viewModel.dataSourceUpcoming,
+                                          isPoster: true)
+                }
+            }
         }
+        .listStyle(PlainListStyle())
+        .navigationTitle(Text("Movies"))
         .onAppear {
             self.viewModel.fetchData()
         }
