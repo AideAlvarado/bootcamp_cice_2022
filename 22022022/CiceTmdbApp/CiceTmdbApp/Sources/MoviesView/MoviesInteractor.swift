@@ -39,7 +39,7 @@ final class MoviesInteractor: BaseInteractor {
         super.baseProvider as? MoviesProviderInputProtocol
     }
     
-    // Metodos
+    // Metodos de transformacion
     func transformDataResultToMoviesTVModelView(data: [ResultNowPlaying]?) -> [MoviesTVModelView]? {
         var datasourceMoviesTV: [MoviesTVModelView] = []
         if let dataUnw = data {
