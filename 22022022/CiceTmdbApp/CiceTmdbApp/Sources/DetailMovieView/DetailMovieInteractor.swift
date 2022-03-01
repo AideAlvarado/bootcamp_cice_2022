@@ -1,5 +1,5 @@
 /*
-
+ 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -23,35 +23,48 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-
 import Foundation
-import SwiftUI
 
+// Input del Interactor
+protocol DetailMovieInteractorInputProtocol: BaseInteractorInputProtocol {
+    func fetchDataDetailMovieInteractor()
+}
 
-final class ShowsCoordinator: BaseCoordinator {
+// Output Provider
+protocol DetailMovieProviderOutputProtocol: BaseProviderOutputProtocol{
+    func setInformationDetailMovie(completion: Result<DetailMovieServerModel?, NetworkError>)
+}
 
-    typealias ContentView = ShowsView
-    typealias ViewModel = ShowsViewModel
-    typealias Interactor = ShowsInteractor
-    typealias Provider = ShowsProvider
+final class DetailMovieInteractor: BaseInteractor {
     
-    static func navigation() -> NavigationView<ContentView> {
-        NavigationView{
-            self.view()
+    // MARK: - DI
+    weak var viewModel: DetailMovieInteractorOutputProtocol? {
+        super.baseViewModel as? DetailMovieInteractorOutputProtocol
+    }
+    
+    // MARK: - DI
+    var provider: DetailMovieProviderInputProtocol? {
+        super.baseProvider as? DetailMovieProviderInputProtocol
+    }
+
+    
+}
+
+// Input del Interactor
+extension DetailMovieInteractor: DetailMovieInteractorInputProtocol {
+    func fetchDataDetailMovieInteractor() {
+        self.provider?.fetchDataDetailMovieProvider()
+    }
+}
+
+// Output Provider
+extension DetailMovieInteractor: DetailMovieProviderOutputProtocol {
+    func setInformationDetailMovie(completion: Result<DetailMovieServerModel?, NetworkError>){
+        switch completion{
+        case .success(let data):
+            self.viewModel?.setInformationDetail(data: data)
+        case .failure(let error):
+            debugPrint(error)
         }
     }
-    
-    static func view(dto: ShowsCoordinatorDTO? = nil) -> ContentView {
-        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
-                                              interactor: Interactor.self,
-                                              provider: Provider.self)
-        let view = ContentView(viewModel: vip.viewModel)
-        return view
-    }
-    
 }
-
-struct ShowsCoordinatorDTO {
-    
-}
-

@@ -23,35 +23,25 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-
-import Foundation
 import SwiftUI
 
+struct DetailShowView: View {
 
-final class ShowsCoordinator: BaseCoordinator {
-
-    typealias ContentView = ShowsView
-    typealias ViewModel = ShowsViewModel
-    typealias Interactor = ShowsInteractor
-    typealias Provider = ShowsProvider
+    @StateObject var viewModel = DetailShowViewModel()
     
-    static func navigation() -> NavigationView<ContentView> {
-        NavigationView{
-            self.view()
+    var body: some View {
+        VStack{
+            Text("Hello DetailShowView")
+        }
+        .onAppear {
+            self.viewModel.fetchData()
         }
     }
-    
-    static func view(dto: ShowsCoordinatorDTO? = nil) -> ContentView {
-        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
-                                              interactor: Interactor.self,
-                                              provider: Provider.self)
-        let view = ContentView(viewModel: vip.viewModel)
-        return view
+
+}
+/*
+struct DetailShowView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailShowView()
     }
-    
-}
-
-struct ShowsCoordinatorDTO {
-    
-}
-
+} */

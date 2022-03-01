@@ -1,5 +1,5 @@
 /*
-
+ 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -23,35 +23,39 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-
 import Foundation
-import SwiftUI
 
-
-final class ShowsCoordinator: BaseCoordinator {
-
-    typealias ContentView = ShowsView
-    typealias ViewModel = ShowsViewModel
-    typealias Interactor = ShowsInteractor
-    typealias Provider = ShowsProvider
-    
-    static func navigation() -> NavigationView<ContentView> {
-        NavigationView{
-            self.view()
-        }
-    }
-    
-    static func view(dto: ShowsCoordinatorDTO? = nil) -> ContentView {
-        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
-                                              interactor: Interactor.self,
-                                              provider: Provider.self)
-        let view = ContentView(viewModel: vip.viewModel)
-        return view
-    }
+// Input del Interactor
+protocol DetailShowInteractorInputProtocol: BaseInteractorInputProtocol {
     
 }
 
-struct ShowsCoordinatorDTO {
+// Output Provider
+protocol DetailShowProviderOutputProtocol: BaseProviderOutputProtocol{
     
 }
 
+final class DetailShowInteractor: BaseInteractor {
+    
+    // MARK: - DI
+    weak var viewModel: DetailShowInteractorOutputProtocol? {
+        super.baseViewModel as? DetailShowInteractorOutputProtocol
+    }
+    
+    // MARK: - DI
+    var provider: DetailShowProviderInputProtocol? {
+        super.baseProvider as? DetailShowProviderInputProtocol
+    }
+
+    
+}
+
+// Input del Interactor
+extension DetailShowInteractor: DetailShowInteractorInputProtocol {
+    
+}
+
+// Output Provider
+extension DetailShowInteractor: DetailShowProviderOutputProtocol {
+
+}

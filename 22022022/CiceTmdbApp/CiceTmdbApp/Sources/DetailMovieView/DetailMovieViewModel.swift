@@ -23,35 +23,38 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-
 import Foundation
-import SwiftUI
 
 
-final class ShowsCoordinator: BaseCoordinator {
+// Output del Interactor
+protocol DetailMovieInteractorOutputProtocol: BaseInteractorOutputProtocol {
+    func setInformationDetail(data: DetailMovieServerModel?)
+}
 
-    typealias ContentView = ShowsView
-    typealias ViewModel = ShowsViewModel
-    typealias Interactor = ShowsInteractor
-    typealias Provider = ShowsProvider
+final class DetailMovieViewModel: BaseViewModel, ObservableObject  {
     
-    static func navigation() -> NavigationView<ContentView> {
-        NavigationView{
-            self.view()
-        }
+    // MARK: - DI
+    var interactor: DetailMovieInteractorInputProtocol?{
+        super.baseInteractor as? DetailMovieInteractorInputProtocol
     }
     
-    static func view(dto: ShowsCoordinatorDTO? = nil) -> ContentView {
-        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
-                                              interactor: Interactor.self,
-                                              provider: Provider.self)
-        let view = ContentView(viewModel: vip.viewModel)
-        return view
+    // MARK: - Variables @Published
+    @Published var data: DetailMovieServerModel?
+    
+    // MARK: - Métodos publicos para View
+    func fetchData() {
+        self.interactor?.fetchDataDetailMovieInteractor()
     }
     
 }
 
-struct ShowsCoordinatorDTO {
-    
+// Output del Interactor
+extension DetailMovieViewModel: DetailMovieInteractorOutputProtocol {
+    func setInformationDetail(data: DetailMovieServerModel?) {
+        guard let dataUnw = data else {
+            return
+        }
+        self.data = dataUnw
+    }
 }
 

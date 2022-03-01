@@ -23,17 +23,17 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-
 import Foundation
 import SwiftUI
 
 
-final class ShowsCoordinator: BaseCoordinator {
 
-    typealias ContentView = ShowsView
-    typealias ViewModel = ShowsViewModel
-    typealias Interactor = ShowsInteractor
-    typealias Provider = ShowsProvider
+final class DetailMovieCoordinator: BaseCoordinator {
+
+    typealias ContentView = DetailMovieView
+    typealias ViewModel = DetailMovieViewModel
+    typealias Interactor = DetailMovieInteractor
+    typealias Provider = DetailMovieProvider
     
     static func navigation() -> NavigationView<ContentView> {
         NavigationView{
@@ -41,17 +41,18 @@ final class ShowsCoordinator: BaseCoordinator {
         }
     }
     
-    static func view(dto: ShowsCoordinatorDTO? = nil) -> ContentView {
+    static func view(dto: DetailMovieCoordinatorDTO? = nil) -> ContentView {
         let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
                                               interactor: Interactor.self,
                                               provider: Provider.self)
+        vip.provider.dataDTO = dto
         let view = ContentView(viewModel: vip.viewModel)
         return view
     }
     
 }
 
-struct ShowsCoordinatorDTO {
-    
+struct DetailMovieCoordinatorDTO {
+    var dataId: Int
 }
 

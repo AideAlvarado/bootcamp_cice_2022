@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct MoviesPosterCarrousel: View {
     
     var title: String
@@ -29,7 +30,12 @@ struct MoviesPosterCarrousel: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 20) {
                     ForEach(self.moviesModel){ movie in
-                        MoviePosterCell(model: movie, isPoster: self.isPoster)
+                        NavigationLink {
+                            DetailMovieCoordinator.view(dto: DetailMovieCoordinatorDTO(dataId: movie.id ?? 0))
+                        } label: {
+                            MoviePosterCell(model: movie, isPoster: self.isPoster)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
             }
@@ -87,6 +93,8 @@ struct MoviePosterCell: View {
         }
     }
 }
+
+
 
 
 //struct MoviesPosterCarrousel_Previews: PreviewProvider {

@@ -23,35 +23,34 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-
 import Foundation
-import SwiftUI
 
 
-final class ShowsCoordinator: BaseCoordinator {
-
-    typealias ContentView = ShowsView
-    typealias ViewModel = ShowsViewModel
-    typealias Interactor = ShowsInteractor
-    typealias Provider = ShowsProvider
+// Output del Interactor
+protocol DetailShowInteractorOutputProtocol: BaseInteractorOutputProtocol {
     
-    static func navigation() -> NavigationView<ContentView> {
-        NavigationView{
-            self.view()
-        }
+}
+
+final class DetailShowViewModel: BaseViewModel, ObservableObject  {
+    
+    // MARK: - DI
+    var interactor: DetailShowInteractorInputProtocol?{
+        super.baseInteractor as? DetailShowInteractorInputProtocol
     }
     
-    static func view(dto: ShowsCoordinatorDTO? = nil) -> ContentView {
-        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
-                                              interactor: Interactor.self,
-                                              provider: Provider.self)
-        let view = ContentView(viewModel: vip.viewModel)
-        return view
+    // MARK: - Variables @Published
+    
+    
+    // MARK: - Métodos publicos para View
+    func fetchData() {
+        
     }
     
 }
 
-struct ShowsCoordinatorDTO {
+// Output del Interactor
+extension DetailShowViewModel: DetailShowInteractorOutputProtocol {
     
 }
+
 
