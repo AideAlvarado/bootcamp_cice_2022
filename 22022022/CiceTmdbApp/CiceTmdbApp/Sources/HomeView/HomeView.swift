@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  CiceTmdbApp
 //
-//  Created by Aide Alvarado on 25/2/22.
+//  Created by Aide Alvarado on 03/3/22.
 //
 
 import SwiftUI
@@ -35,14 +35,16 @@ struct HomeView: View {
         case .shows:
             ShowsCoordinator.navigation()
         case .people:
-            MoviesCoordinator.navigation()
+            PeoplePopularCoordinator.navigation()
         case .search:
             MoviesCoordinator.navigation()
         case .profile:
-            MoviesCoordinator.navigation()
+            ProfileView()
         }
     }
 }
+
+
 /*
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

@@ -31,7 +31,7 @@ struct DetailMovieView: View {
     //var viewModel: DetailMovieServerModel
     @SwiftUI.Environment(\.presentationMode) var presenterMode
     //private var imageLoader = ImageLoader()
-    @State private var selectedTrailer: ResultVideo?
+    @State private var selectedTrailer: VideosYouTubeViewModel?
     
     var body: some View {
         ScrollView{
@@ -39,6 +39,15 @@ struct DetailMovieView: View {
                 headerView
                 bodyView
             }
+        }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .edgesIgnoringSafeArea(.all)
+        .sheet(item: self.$selectedTrailer) { myTrailer in
+            SafariView(url: myTrailer.youtubeURL!)
+        }
+        .onAppear {
+            self.viewModel.fetchData()
         }
     }
     
@@ -78,8 +87,10 @@ struct DetailMovieView: View {
         }
     }
     
+    
     var bodyView: some View {
         VStack(alignment: .leading, spacing: 30) {
+            
             HStack{
                 Text(self.viewModel.data?.genreText ?? "")
                 Text("·").fontWeight(.heavy)
@@ -87,6 +98,7 @@ struct DetailMovieView: View {
                 Text(self.viewModel.data?.durationText ?? "")
             }
             
+             
             Text(self.viewModel.data?.overview ?? "")
                 .font(.title2)
             
@@ -102,48 +114,26 @@ struct DetailMovieView: View {
             Text("Starrings")
                 .font(.title)
                 .fontWeight(.bold)
+            /*
             ScrollView(.horizontal, showsIndicators: false) {
                 if self.viewModel.data?.cast != nil && !(self.viewModel.data?.cast?.isEmpty ?? false){
                     MovieCastCarrouselView(model: self.viewModel.data?.cast ?? [])
                 }
             }
-            
+            */
             HStack(alignment: .top, spacing: 4) {
                 if self.viewModel.data?.crew != nil && !(self.viewModel.data?.crew?.isEmpty ?? false) {
                     VStack(alignment: .leading, spacing: 4) {
-                        if self.viewModel.data?.directors != nil && !(self.viewModel.data?.directors?.isEmpty ?? false){
-                            Text("Directors")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .padding(.top)
-                            ForEach((self.viewModel.data?.directors?.prefix(2))!) { item in
-                                Text(item.name ?? "")
-                            }
-                        }
-                        
-                        if self.viewModel.data?.producers != nil && !(self.viewModel.data?.producers?.isEmpty ?? false){
-                            Text("Producer[s]")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .padding(.top)
-                            ForEach((self.viewModel.data?.producers?.prefix(2))!) { item in
-                                Text(item.name ?? "")
-                            }
-                        }
-                        
-                        if self.viewModel.data?.screenWriters != nil && !(self.viewModel.data?.screenWriters?.isEmpty ?? false){
-                            Text("Writer[s]")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .padding(.top)
-                            ForEach((self.viewModel.data?.screenWriters?.prefix(2))!) { item in
-                                Text(item.name ?? "")
-                            }
-                        }
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                        castMembers(castMembers: self.viewModel.data?.directors,
+                                    typeCastMember: "Director[s]")
+                        castMembers(castMembers: self.viewModel.data?.producers,
+                                    typeCastMember: "Producer[s]")
+                        castMembers(castMembers: self.viewModel.data?.screenWriters ,
+                                    typeCastMember: "Writer[s]")
+                    }.frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
+            
             
             if self.viewModel.data?.youtubeTrailers != nil && !(self.viewModel.data?.youtubeTrailers?.isEmpty ?? false){
                 VStack(alignment: .leading, spacing: 20) {
@@ -162,22 +152,43 @@ struct DetailMovieView: View {
                             }
                         }
                         .buttonStyle(PlainButtonStyle())
-
                     }
                 }
             }
+       
+             
+            
         }
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
-        .edgesIgnoringSafeArea(.all)
-        .sheet(item: self.$selectedTrailer) { myTrailer in
-            SafariView(url: myTrailer.youtubeURL!)
-        }
-        .onAppear {
-            self.viewModel.fetchData()
-        }
+        .padding()
+        .padding(.bottom, 100)
+        .background(
+            roundedShape()
+                .fill(Color.black)
+                .shadow(color: Color.black.opacity(0.3),
+                        radius: 10,
+                        x: 0,
+                        y: -50)
+        
+        )
+        .padding(.top, -60)
     }
+}
 
+struct castMembers: View {
+    let castMembers:[CrewViewModel]?
+    let typeCastMember: String?
+    var body: some View {
+        if castMembers != nil && !(castMembers?.isEmpty ?? false){
+            Text(typeCastMember ?? "")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding(.top)
+            ForEach((castMembers?.prefix(2))!) { item in
+                Text(item.name ?? "")
+            }
+        }    }
+    
+    
 }
 
 struct MovieDetailImage: View {
@@ -205,10 +216,17 @@ struct MovieDetailImage: View {
     }
 }
 
-
-/*
-struct DetailMovieView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailMovieView(viewModel: DetailMovieServerModel.stubbedDetailMovie!)
+struct roundedShape: Shape {
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect,
+                                byRoundingCorners: [.topLeft, .topRight],
+                                cornerRadii: CGSize(width: 35, height: 35))
+        return Path(path.cgPath)
     }
-}*/
+}
+//
+//struct DetailMovieView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailMovieView()
+//    }
+//}
