@@ -5,6 +5,7 @@
 //  Created by Aide Alvarado on 3/3/22.
 //
 
+
 import SwiftUI
 
 struct ProfileView: View {
@@ -20,7 +21,7 @@ struct ProfileView: View {
                     } label: {
                         Text("Logout")
                     }
-                    .font(.title3)
+                    .buttonStyleH1()
                 }
             }
         } else {
@@ -28,6 +29,7 @@ struct ProfileView: View {
         }
     }
 }
+
 /*
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {

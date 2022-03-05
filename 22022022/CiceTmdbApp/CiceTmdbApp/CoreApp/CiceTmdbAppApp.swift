@@ -5,6 +5,7 @@
 //  Created by Aide Alvarado on 23/2/22.
 //
 
+
 import SwiftUI
 import Firebase
 
@@ -15,7 +16,8 @@ struct CiceTmdbAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(LoginViewModel())
+            ContentView()
+                .environmentObject(LoginViewModel())
         }
     }
 }

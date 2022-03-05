@@ -19,6 +19,16 @@
 		466E333327D26C8000D947D0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E333127D26C8000D947D0 /* LoginViewModel.swift */; };
 		466E333427D26C8000D947D0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E333227D26C8000D947D0 /* LoginView.swift */; };
 		466E333727D26CC000D947D0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E333627D26CC000D947D0 /* ProfileView.swift */; };
+		466E333B27D3C52B00D947D0 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E333A27D3C52B00D947D0 /* HudView.swift */; };
+		466E334227D3C69500D947D0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E333D27D3C69500D947D0 /* SearchView.swift */; };
+		466E334327D3C69500D947D0 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E333E27D3C69500D947D0 /* SearchCoordinator.swift */; };
+		466E334427D3C69500D947D0 /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E333F27D3C69500D947D0 /* SearchProvider.swift */; };
+		466E334527D3C69500D947D0 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E334027D3C69500D947D0 /* SearchInteractor.swift */; };
+		466E334627D3C69500D947D0 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E334127D3C69500D947D0 /* SearchViewModel.swift */; };
+		466E334827D3C70700D947D0 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E334727D3C70700D947D0 /* SearchBarView.swift */; };
+		466E334D27D3C77800D947D0 /* LoaderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E334A27D3C77800D947D0 /* LoaderModifier.swift */; };
+		466E334E27D3C77800D947D0 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E334B27D3C77800D947D0 /* ButtonModifier.swift */; };
+		466E334F27D3C77800D947D0 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E334C27D3C77800D947D0 /* TextFieldModifier.swift */; };
 		46D31DE327C6A55F00A42B39 /* CiceTmdbAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D31DE227C6A55F00A42B39 /* CiceTmdbAppApp.swift */; };
 		46D31DE527C6A55F00A42B39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D31DE427C6A55F00A42B39 /* ContentView.swift */; };
 		46D31DE727C6A57400A42B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D31DE627C6A57400A42B39 /* Assets.xcassets */; };
@@ -91,6 +101,16 @@
 		466E333127D26C8000D947D0 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		466E333227D26C8000D947D0 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		466E333627D26CC000D947D0 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		466E333A27D3C52B00D947D0 /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		466E333D27D3C69500D947D0 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		466E333E27D3C69500D947D0 /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		466E333F27D3C69500D947D0 /* SearchProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProvider.swift; sourceTree = "<group>"; };
+		466E334027D3C69500D947D0 /* SearchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		466E334127D3C69500D947D0 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		466E334727D3C70700D947D0 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		466E334A27D3C77800D947D0 /* LoaderModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderModifier.swift; sourceTree = "<group>"; };
+		466E334B27D3C77800D947D0 /* ButtonModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		466E334C27D3C77800D947D0 /* TextFieldModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		46D31DDF27C6A55F00A42B39 /* CiceTmdbApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceTmdbApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D31DE227C6A55F00A42B39 /* CiceTmdbAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiceTmdbAppApp.swift; sourceTree = "<group>"; };
 		46D31DE427C6A55F00A42B39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -194,6 +214,28 @@
 			path = ProfileView;
 			sourceTree = "<group>";
 		};
+		466E333C27D3C69500D947D0 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				466E333D27D3C69500D947D0 /* SearchView.swift */,
+				466E333E27D3C69500D947D0 /* SearchCoordinator.swift */,
+				466E333F27D3C69500D947D0 /* SearchProvider.swift */,
+				466E334027D3C69500D947D0 /* SearchInteractor.swift */,
+				466E334127D3C69500D947D0 /* SearchViewModel.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		466E334927D3C77800D947D0 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				466E334A27D3C77800D947D0 /* LoaderModifier.swift */,
+				466E334B27D3C77800D947D0 /* ButtonModifier.swift */,
+				466E334C27D3C77800D947D0 /* TextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		46D31DD627C6A55E00A42B39 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +256,7 @@
 		46D31DE127C6A55F00A42B39 /* CiceTmdbApp */ = {
 			isa = PBXGroup;
 			children = (
+				466E334927D3C77800D947D0 /* ViewModifiers */,
 				46D31E7627CE9C2600A42B39 /* UIKitViews */,
 				46D31E4827C943D600A42B39 /* Components */,
 				46D31E4527C9438A00A42B39 /* ModelView */,
@@ -282,6 +325,7 @@
 		46D31DF627C6A92900A42B39 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				466E333C27D3C69500D947D0 /* SearchView */,
 				466E333527D26CC000D947D0 /* ProfileView */,
 				466E333027D26C8000D947D0 /* Login */,
 				46D31E8727D12B3100A42B39 /* OnBoardingView */,
@@ -362,6 +406,7 @@
 		46D31E4827C943D600A42B39 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				466E333A27D3C52B00D947D0 /* HudView.swift */,
 				46D31E9227D1305800A42B39 /* PeopleCarrousel.swift */,
 				466E332E27D26BC600D947D0 /* CustomTextField.swift */,
 				46D31E4927C943D600A42B39 /* MoviesPosterCarrousel.swift */,
@@ -397,6 +442,7 @@
 		46D31E7627CE9C2600A42B39 /* UIKitViews */ = {
 			isa = PBXGroup;
 			children = (
+				466E334727D3C70700D947D0 /* SearchBarView.swift */,
 				46D31E7727CE9C2600A42B39 /* SafariView.swift */,
 			);
 			path = UIKitViews;
@@ -520,17 +566,21 @@
 				46D31E2927C930E900A42B39 /* MoviesInteractor.swift in Sources */,
 				466E332627D26B3200D947D0 /* ViewController.swift in Sources */,
 				46D31E4A27C943D600A42B39 /* MoviesPosterCarrousel.swift in Sources */,
+				466E334D27D3C77800D947D0 /* LoaderModifier.swift in Sources */,
+				466E334327D3C69500D947D0 /* SearchCoordinator.swift in Sources */,
 				466E332D27D26B3200D947D0 /* SceneDelegate.swift in Sources */,
 				46D31E2B27C9314800A42B39 /* MoviesCoordinator.swift in Sources */,
 				46D31DFC27C6AA2D00A42B39 /* Utils.swift in Sources */,
 				46D31E0427C6AACB00A42B39 /* MoviesView.swift in Sources */,
 				46D31E7027CA9D1200A42B39 /* DetailShowInteractor.swift in Sources */,
 				46D31E7F27D12B1300A42B39 /* PeoplePopularViewModel.swift in Sources */,
+				466E334627D3C69500D947D0 /* SearchViewModel.swift in Sources */,
 				46D31E7827CE9C2600A42B39 /* SafariView.swift in Sources */,
 				46D31DFE27C6AA5500A42B39 /* Obfuscator.swift in Sources */,
 				46D31E4427C93B5200A42B39 /* NetworkError.swift in Sources */,
 				466E333327D26C8000D947D0 /* LoginViewModel.swift in Sources */,
 				46D31E3827C9391D00A42B39 /* ShowsInteractor.swift in Sources */,
+				466E334E27D3C77800D947D0 /* ButtonModifier.swift in Sources */,
 				46D31E7527CE8D9200A42B39 /* MovieCastCarrouselView.swift in Sources */,
 				46D31E8127D12B1300A42B39 /* PeoplePopularProvider.swift in Sources */,
 				46D31E3D27C939C200A42B39 /* ImageLoader.swift in Sources */,
@@ -542,22 +592,28 @@
 				46D31E6727CA9D0200A42B39 /* DetailMovieCoordinator.swift in Sources */,
 				46D31E4C27CA992800A42B39 /* ShowsServerModel.swift in Sources */,
 				46D31E5D27CA9CB900A42B39 /* DetailMovieServerModel.swift in Sources */,
+				466E334827D3C70700D947D0 /* SearchBarView.swift in Sources */,
 				46D31E0727C6AAFE00A42B39 /* MoviesServerModel.swift in Sources */,
 				46D31E6527CA9D0200A42B39 /* DetailMovieInteractor.swift in Sources */,
 				466E332F27D26BC600D947D0 /* CustomTextField.swift in Sources */,
+				466E333B27D3C52B00D947D0 /* HudView.swift in Sources */,
 				46D31E4227C939F600A42B39 /* HomeView.swift in Sources */,
 				46D31E9527D1313D00A42B39 /* DetailMovieTVModelView.swift in Sources */,
 				46D31E8027D12B1300A42B39 /* PeoplePopularCoordinator.swift in Sources */,
+				466E334227D3C69500D947D0 /* SearchView.swift in Sources */,
 				46D31E7227CA9D1200A42B39 /* DetailShowViewModel.swift in Sources */,
 				466E333727D26CC000D947D0 /* ProfileView.swift in Sources */,
 				46D31E8D27D12E4700A42B39 /* DetailShowServerModel.swift in Sources */,
 				46D31E3727C9391D00A42B39 /* ShowsViewModel.swift in Sources */,
+				466E334427D3C69500D947D0 /* SearchProvider.swift in Sources */,
 				46D31E2D27C9315700A42B39 /* MoviesProvider.swift in Sources */,
+				466E334527D3C69500D947D0 /* SearchInteractor.swift in Sources */,
 				46D31E9327D1305800A42B39 /* PeopleCarrousel.swift in Sources */,
 				46D31E0027C6AA6C00A42B39 /* Constants.swift in Sources */,
 				46D31E8B27D12E2C00A42B39 /* PeoplePopularServerModel.swift in Sources */,
 				46D31E6427CA9D0200A42B39 /* DetailMovieProvider.swift in Sources */,
 				46D31E8627D12B2A00A42B39 /* DetailPersonPopular.swift in Sources */,
+				466E334F27D3C77800D947D0 /* TextFieldModifier.swift in Sources */,
 				46D31E8327D12B1300A42B39 /* PeoplePopularInteractor.swift in Sources */,
 				46D31E6827CA9D0200A42B39 /* DetailMovieView.swift in Sources */,
 				46D31E3027C9356C00A42B39 /* NetworkService.swift in Sources */,

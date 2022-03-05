@@ -22,7 +22,7 @@ struct MoviesPosterCarrousel: View {
                     .fontWeight(.bold)
                     .padding(.horizontal)
                 Rectangle()
-                    .fill(Color.blue.opacity(0.3))
+                    .fill(Color.cyan.opacity(0.3))
                     .frame(width: 50, height: 5)
             }
             .padding(.bottom, 20)
@@ -82,12 +82,14 @@ struct MoviePosterCell: View {
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color.red, lineWidth: 1)
                         )
+                        .loader(state: .ok)
                 } else {
                     Rectangle()
                         .fill(LinearGradient(gradient: Gradient(colors: [Color.red, Color.clear]),
                                              startPoint: .bottom,
                                              endPoint: .top))
                         .cornerRadius(8)
+                        .loader(state: .loading)
                 }
             }
             .frame(width: self.isPoster ? 240 : 270, height: self.isPoster ? 306 : 150)
