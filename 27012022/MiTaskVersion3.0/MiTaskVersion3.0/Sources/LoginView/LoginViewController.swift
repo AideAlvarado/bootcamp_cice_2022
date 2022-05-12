@@ -80,7 +80,9 @@ class LoginViewController: UIViewController {
     }
     
     private func mostrarHomeTabBar() {
-        let vc = HomeTabBarViewCoordinator.homeViewController()
+        
+        let vc = NuevaTareaViewCoordinator.navigation()
+        //let vc = HomeTabBarViewCoordinator.homeViewController()
         vc.modalTransitionStyle = .coverVertical
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)

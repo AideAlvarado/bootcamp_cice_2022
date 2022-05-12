@@ -11,7 +11,11 @@ import UIKit
 class NuevaTareaViewController: UIViewController {
     
     // MARK: - Variables globales
-    let dataSourcePrioridad = ["ALTA", "MEDIA-ALTA", "MEDIA", "MEDIA-BAJA", "BAJA"]
+    let dataSourcePrioridad = ["ALTA",
+                               "MEDIA-ALTA",
+                               "MEDIA",
+                               "MEDIA-BAJA",
+                               "BAJA"]
     var nombreCategoria = "Sin Categoría"
     var fotoSeleccionada = false
     
@@ -21,7 +25,7 @@ class NuevaTareaViewController: UIViewController {
     @IBOutlet weak var prioridadTF: UITextField!
     @IBOutlet weak var fechaTF: UITextField!
     @IBOutlet weak var categoriaLBL: UILabel!
-    @IBOutlet weak var descripcionTV: UITextView!
+    @IBOutlet weak var descripcionTV: UILabel!
     @IBOutlet weak var imagenTareaIV: UIImageView!
     @IBOutlet weak var categoriaBTN: UIButton!
     @IBOutlet weak var salvarDatosBTN: UIButton!
@@ -135,6 +139,7 @@ class NuevaTareaViewController: UIViewController {
         self.title = "Nueva Tarea"
         self.categoriaBTN.layer.cornerRadius = 16
         self.salvarDatosBTN.layer.cornerRadius = 16
+        
         self.imagenTareaIV.layer.cornerRadius = self.imagenTareaIV.frame.width / 2
         self.imagenTareaIV.layer.borderWidth = 1.2
         self.imagenTareaIV.layer.borderColor = UIColor.red.cgColor

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,13 +11,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NuevaTareaViewController" customModule="MiTaskVersion3_0" customModuleProvider="target">
             <connections>
-                <outlet property="categoriaLBL" destination="ye0-6J-b9h" id="EQi-nJ-z9F"/>
+                <outlet property="categoriaBTN" destination="ye0-6J-b9h" id="M0K-n1-Mdl"/>
+                <outlet property="categoriaLBL" destination="oyN-gf-HDt" id="XiF-c9-ZDX"/>
                 <outlet property="descripcionTV" destination="oyN-gf-HDt" id="Qeu-3P-sXb"/>
                 <outlet property="fechaTF" destination="WE2-0O-oOa" id="RU6-YM-5xF"/>
-                <outlet property="imageTareaIV" destination="V7N-hK-ayU" id="bWP-qI-h0D"/>
-                <outlet property="nuevaTareaTF" destination="l8i-Yf-3FV" id="KEh-wP-Rva"/>
+                <outlet property="imagenTareaIV" destination="V7N-hK-ayU" id="sVB-Im-iPM"/>
+                <outlet property="nuevaTareaTF" destination="SxP-fY-Rq4" id="WXE-fy-Gdz"/>
                 <outlet property="prioridadTF" destination="skd-UZ-sPi" id="RaG-xH-5TE"/>
-                <outlet property="salvarDatosBTN" destination="Yvh-ab-Epo" id="mGc-gK-4QB"/>
+                <outlet property="salvarDatosBTN" destination="Yvh-ab-Epo" id="NYq-CA-omp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

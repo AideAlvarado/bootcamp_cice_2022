@@ -24,7 +24,7 @@ class Utils {
         return alertVC
     }
     
-    static func configuracionMailCompose(delegate: MFMailComposeViewControllerDelegate, data: Contact?) -> MFMailComposeViewController {
+    static func configuracionMailCompose(delegate: MFMailComposeViewControllerDelegate, data: ArrayContact?) -> MFMailComposeViewController {
         let mailCompo = MFMailComposeViewController()
         mailCompo.mailComposeDelegate = delegate
         mailCompo.setToRecipients(["info@mail.com", "masinfo@mail.es"])

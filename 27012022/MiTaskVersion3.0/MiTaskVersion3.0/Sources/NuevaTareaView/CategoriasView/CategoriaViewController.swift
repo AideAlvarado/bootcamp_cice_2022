@@ -42,7 +42,7 @@ class CategoriaViewController: UIViewController {
     private func configuracionTV() {
         self.categoriaTableView.delegate = self
         self.categoriaTableView.dataSource = self
-        self.categoriaTableView.register(UINib(nibName: CategoriaCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: CategoriaCell.defaultReuseIdentifier)
+        self.categoriaTableView.register(UINib(nibName: TareaCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: TareaCell.defaultReuseIdentifier)
     }
 
 }
@@ -57,7 +57,7 @@ extension CategoriaViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.categoriaTableView.dequeueReusableCell(withIdentifier: CategoriaCell.defaultReuseIdentifier, for: indexPath) as! CategoriaCell
+        let cell = self.categoriaTableView.dequeueReusableCell(withIdentifier: TareaCell.defaultReuseIdentifier, for: indexPath) as! TareaCell
         cell.nombreCategoriaLBL.text = self.datasourceCategorias[indexPath.row]
         return cell
     }

@@ -56,7 +56,6 @@
 		461384CB27B4270E00837EBC /* HomeTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384CA27B4270E00837EBC /* HomeTabBarCoordinator.swift */; };
 		461384CF27B444A600837EBC /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384CD27B444A600837EBC /* MusicCell.swift */; };
 		461384D027B444A600837EBC /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 461384CE27B444A600837EBC /* MusicCell.xib */; };
-		461384D327B4496A00837EBC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 461384D227B4496A00837EBC /* Kingfisher */; };
 		461384D527B58F4100837EBC /* PodcastServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384D427B58F4100837EBC /* PodcastServerModel.swift */; };
 		461384D827B596AF00837EBC /* AppleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384D727B596AF00837EBC /* AppleViewModel.swift */; };
 		461384DA27B6CB7000837EBC /* AppleServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461384D927B6CB7000837EBC /* AppleServerModel.swift */; };
@@ -93,7 +92,6 @@
 		4613853227BD5D6900837EBC /* AlertDefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4613853027BD5D6900837EBC /* AlertDefaultViewController.xib */; };
 		4613853527BD68EA00837EBC /* CustomAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613853427BD68E900837EBC /* CustomAlertManager.swift */; };
 		4613853727BD6A4300837EBC /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613853627BD6A4300837EBC /* LocalizedKeys.swift */; };
-		4613853A27C0129900837EBC /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 4613853927C0129900837EBC /* PKHUD */; };
 		4613853E27C022AA00837EBC /* GenericWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613853C27C022A900837EBC /* GenericWebViewController.swift */; };
 		4613853F27C022AA00837EBC /* GenericWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4613853D27C022AA00837EBC /* GenericWebViewController.xib */; };
 		4613854127C022CF00837EBC /* GenericWebPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613854027C022CF00837EBC /* GenericWebPresenter.swift */; };
@@ -108,6 +106,8 @@
 		4613855627C1481500837EBC /* TipsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613855427C1481500837EBC /* TipsCell.swift */; };
 		4613855727C1481500837EBC /* TipsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4613855527C1481500837EBC /* TipsCell.xib */; };
 		4613855927C149D000837EBC /* TipsServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613855827C149D000837EBC /* TipsServerModel.swift */; };
+		4655EABE28284D6600829A3C /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 4655EABD28284D6600829A3C /* PKHUD */; };
+		46B7AD102828551400C80F28 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 46B7AD0F2828551400C80F28 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -227,8 +227,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				461384D327B4496A00837EBC /* Kingfisher in Frameworks */,
-				4613853A27C0129900837EBC /* PKHUD in Frameworks */,
+				46B7AD102828551400C80F28 /* Kingfisher in Frameworks */,
+				4655EABE28284D6600829A3C /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,8 +593,8 @@
 			);
 			name = CiceMusic;
 			packageProductDependencies = (
-				461384D227B4496A00837EBC /* Kingfisher */,
-				4613853927C0129900837EBC /* PKHUD */,
+				4655EABD28284D6600829A3C /* PKHUD */,
+				46B7AD0F2828551400C80F28 /* Kingfisher */,
 			);
 			productName = CiceMusic;
 			productReference = 4613841C27B03B7300837EBC /* CiceMusic.app */;
@@ -629,8 +629,8 @@
 			);
 			mainGroup = 4613841327B03B7300837EBC;
 			packageReferences = (
-				461384D127B4496A00837EBC /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				4613853827C0129800837EBC /* XCRemoteSwiftPackageReference "PKHUD" */,
+				4655EABC28284D6600829A3C /* XCRemoteSwiftPackageReference "PKHUD" */,
+				46B7AD0E2828551400C80F28 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 4613841D27B03B7300837EBC /* Products */;
 			projectDirPath = "";
@@ -838,7 +838,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -894,7 +894,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -913,7 +913,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GV2SR6YNSB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CiceMusic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -947,7 +947,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GV2SR6YNSB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CiceMusic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1017,7 +1017,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1036,7 +1036,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GV2SR6YNSB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CiceMusic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1086,15 +1086,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		461384D127B4496A00837EBC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
-		4613853827C0129800837EBC /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+		4655EABC28284D6600829A3C /* XCRemoteSwiftPackageReference "PKHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pkluz/PKHUD.git";
 			requirement = {
@@ -1102,18 +1094,26 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		46B7AD0E2828551400C80F28 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		461384D227B4496A00837EBC /* Kingfisher */ = {
+		4655EABD28284D6600829A3C /* PKHUD */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 461384D127B4496A00837EBC /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		4613853927C0129900837EBC /* PKHUD */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4613853827C0129800837EBC /* XCRemoteSwiftPackageReference "PKHUD" */;
+			package = 4655EABC28284D6600829A3C /* XCRemoteSwiftPackageReference "PKHUD" */;
 			productName = PKHUD;
+		};
+		46B7AD0F2828551400C80F28 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46B7AD0E2828551400C80F28 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

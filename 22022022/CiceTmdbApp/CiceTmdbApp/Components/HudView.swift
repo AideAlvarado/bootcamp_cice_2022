@@ -90,9 +90,9 @@ struct HudView: View {
             }
         }
 }
-/*
+
 struct HudView_Previews: PreviewProvider {
     static var previews: some View {
         HudView()
     }
-}*/
+}
